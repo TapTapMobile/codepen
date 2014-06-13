@@ -228,6 +228,7 @@ hr { border:none; border-bottom:1px double #F5F5F5; }
 .nav-icon-typo 			{ background-repeat:no-repeat; background-position:center; background-image:url(img/navico/typo.svg); background-size:42px 42px; }
 .nav-icon-reglogin	 	{ background-repeat:no-repeat; background-position:center; background-image:url(img/navico/login_nav.svg); background-size:42px 42px; }
 .nav-icon-contact 		{ background-repeat:no-repeat; background-position:center; background-image:url(img/navico/mail.svg); background-size:42px 42px; }
+.nav-icon-back 		{ background-repeat:no-repeat; background-position:center; background-image:url(img/navico/back.svg); background-size:42px 42px; }
 
 .nav-icon-blog2 		{ background-repeat:no-repeat; background-position:center; background-image:url(img/navico/blog.svg); background-size:42px 42px; }
 .nav-icon-portfolio2 	{ background-repeat:no-repeat; background-position:center; background-image:url(img/navico/bonus/portfolio.svg); background-size:42px 42px; }
