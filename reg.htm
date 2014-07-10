@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+<head></head><body>
+
+<script language='javascript' type='text/javascript'>
+	var APIKEY = "5d697233-0702-419b-992e-a62951ba439a";
+	
+	/* 
+	*	Registration block:
+	*	functions: 
+	*		createRequest() - Create connection object. it is nothing to change here.
+	*		registerUser() - Register new user throught connection object "r" created by createRequest().
+	*		updatePage() - Show thanks info block on end of registration process.
+	*/
+	var r = false;
+	var success_message = '<div style="padding:10px;">Thank you</div>';
+	function createRequest(){
+		try{
+			r=new XMLHttpRequest();
+		}catch(trymicrosoft){
+			try{
+				r=new ActiveXObject('Msxml2.XMLHTTP');
+			}catch(othermicrosoft){
+				try{
+					r=new ActiveXObject('Microsoft.XMLHTTP');
+				}catch(failed){
+					r=false;
+				}
+			}
+		}
+		if(!r)alert('Error initializing XMLHttpRequest!');
+	}
+	function registerUser() {
+		if(!isValid()) return false;createRequest();
+		var cell = document.getElementById('txtHomePhone').value;	// Get phone input field
+		url = 'http://api.viplus.com/Gates/Ws-'+APIKEY+'.asmx/RMembers_Import' + 
+		'?cellphone=' + escape(cell) + 
+		'&viplists=0';
+		try{														// Try to register
+			r.overrideMimeType('text');
+			r.open('GET', url, true); 
+			r.onreadystatechange = updatePage; 
+			r.send(null); 
+			return false;
+		}
+		catch(err){
+			try{
+				if(document.getElementById('atp_register') == undefined){
+					var iframe = document.createElement('iframe');
+					iframe.style.display = "none";
+					iframe.id = "atp_register";
+					iframe.src=url;
+					document.body.appendChild(iframe);
+					document.getElementById('viplus_wrapper').innerHTML = success_message;
+				}
+			}catch(e){document.getElementById('viplus_wrapper').innerHTML = '<div style="padding:10px;">Connection error</div>';}
+		}
+	}
+	
+	function updatePage() {
+		if (r.readyState == 4) {
+			if(r.status == 200 || r.status == 0){
+				document.getElementById('viplus_wrapper').innerHTML = success_message;
+			}
+			else{
+				document.getElementById('viplus_wrapper').innerHTML = '<div style="padding:10px;">Error<br/>error code: ' + r.status + '</div>';
+			}
+		}
+	}
+	/* 
+	*	End of registration block 
+	*/
+	
+	
+	// Validation check: check user inputs for validity
+	function isValid(){
+		var phone = document.getElementById('txtHomePhone');	// Get phone input field
+		var valid = true;										// Boolean flag of validity.
+		
+		/* Phone validation check: the length must to be in interval [7..11] digits. Can include dash '-' symbol  */
+		if(phone.value == '' || phone.value.length > 11 || phone.value.length < 7 || !validatePhone(phone.value)){
+			phone.style.background = '#FFB6C1';
+			valid = false;
+		}
+		else
+			phone.style.background = 'none';
+		/* End of phone validation check */
+		
+		return valid;
+	}
+	
+	// Phone validation function
+	function validatePhone(e){
+		var re = /^[0-9\-]+$/;
+		return re.test(e);
+	}
+</script>
+<div id='viplus_wrapper'>
+<table width="250" style="direction: ltr;">
+	<tbody>
+		<tr id="trPhone">
+			<td>
+				Phone:
+			</td>
+			<td>
+				<input type="text" maxlength="20" id="txtHomePhone" name="txtHomePhone">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="submit" style="width: 100px; margin-top: 14px" value="Submit" id="cmdOK" name="cmdOK" onclick='registerUser();false;'>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+</body></html>
