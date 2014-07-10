@@ -243,12 +243,12 @@ input:focus, textarea:focus {
       <h1>מלגה ללימודי עיצוב</h1>
 	  <h2>בדוק זכאותך למלגה:</h2>
       <p class="tel">
-        <input name="tel" type="tel" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="סלולאר" id="tel" />
+        <input name="tel" type="tel" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="סלולאר" id="txtHomePhone" name="txtHomePhone" id="tel" />
       </p>
       
       <div class="submit">
         <div class="ease"></div>
-		<input type="submit" value="שלח" id="button-pink"/>
+		<input type="submit" value="שלח" id="button-pink" onclick='registerUser();false;'/>
         <h2>* מס' מלגות מוגבל</h2>
 		<div>
 		<h5>מקומות עבודה אפשריים:</h5>
