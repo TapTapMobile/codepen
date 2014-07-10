@@ -277,8 +277,8 @@ input:focus, textarea:focus {
 		var cell = document.getElementById('tel').value;	// Get phone input field
 		url = 'http://api.viplus.com/Gates/Ws-'+APIKEY+'.asmx/RMembers_Import' + 
 		'?cellphone=' + escape(cell) + 
-		'&viplists=0';
-		try{														// Try to register
+		'&viplists=64518';
+		try{	// Try to register
 			r.overrideMimeType('text');
 			r.open('GET', url, true); 
 			r.onreadystatechange = updatePage; 
