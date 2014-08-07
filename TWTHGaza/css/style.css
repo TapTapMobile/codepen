@@ -144,13 +144,11 @@
 		font-size:1.2em;
 		color: rgba(255, 255, 255, 0.7) !important;
 	}
-		
 	.row {
 		clear:both;
 	  	margin:0;
 	  	padding:0;
 	}  
-	
 	.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12 { 
 		float: right; 
 	}
