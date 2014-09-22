@@ -1,0 +1,169 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: url('images/bg.png') repeat top center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2, h3, h4 {
+	font-family: 'Open Sans', cursive;
+	color: #F4F5F7;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #000000;
+	font-weight: 300;
+    filter: dropshadow(color=#000000, offx=0, offy=1);
+}
+h1 {
+	text-align: center;
+}
+#header {
+	color: #D7DBE3;	
+	padding: 15px;
+	border-bottom: 1px dashed #545E67;
+    text-shadow: 0px 1px 0px #000000;
+    filter: dropshadow(color=#000000, offx=0, offy=1);	
+}
+#header h1 {
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+    width: 960px;
+}
+#container {
+	width: 960px;
+	margin: 0 auto;
+    position: relative;
+}
+.girl {
+    left: 40px;
+    position: absolute;
+    top: -20px;
+	z-index: -9999;
+}
+#side-bar {
+    background: url("images/bg.png") repeat scroll center top transparent;
+    color: #D7DBE3;
+    float: left;
+    font-size: 14px;
+    margin-bottom: 40px;
+    margin-top: -165px;
+    padding: 10px 25px 10px 10px;
+    position: relative;
+    text-shadow: 0 1px 0 #000000;
+    width: 470px;
+    z-index: 99999999;
+}
+#form {
+    color: #D7DBE3;
+    float: right;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    text-shadow: 0 1px 0 #000000;
+    width: 375px;
+}
+#form h2 {
+	font-size: 16px;	
+}
+#form h2.rule {
+	margin: 10px;
+	font-size: 22px;
+}
+#rules {
+	font-size: 15px;
+	margin-bottom: 20px;
+}
+#rules p {
+	clear: both;
+}
+#rules p img {
+	float: left;
+	margin: 5px 9px 20px;
+}
+.submit {
+	text-align: center;
+}
+a.btn {  
+    color: #333;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	filter: dropshadow(color=#FFF, offx=0, offy=-1); 
+	font-size: 24px;
+    line-height: 70px;
+    padding: 18px 140px;
+    text-decoration: none;
+    border: 1px solid #FFAA22;
+    background: #FEE94F; /* Old browsers */
+	background: -moz-linear-gradient(top,  #FEE94F 0%, #FD9A0F 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FEE94F), color-stop(100%,#FD9A0F)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #FEE94F 0%,#FD9A0F 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #FEE94F 0%,#FD9A0F 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #FEE94F 0%,#FD9A0F 100%); /* IE10+ */
+	background: linear-gradient(top,  #FEE94F 0%,#FD9A0F 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FEE94F', endColorstr='#FD9A0F',GradientType=0 ); /* IE6-9 */
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px; 
+}
+a.btn:hover { 
+    background: #FD9A0F; /* Old browsers */
+	background: -moz-linear-gradient(top,  #FD9A0F 0%, #FEE94F 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FD9A0F), color-stop(100%,#FEE94F)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #FD9A0F 0%,#FEE94F 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #FD9A0F 0%,#FEE94F 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #FD9A0F 0%,#FEE94F 100%); /* IE10+ */
+	background: linear-gradient(top,  #FD9A0F 0%,#FEE94F 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FD9A0F', endColorstr='#FEE94F',GradientType=0 ); /* IE6-9 */
+}
+.notes {	
+	color: #D7DBE3;	
+	clear: both;
+	border-top: 1px dashed #545E67;
+	padding: 20px 5px; 
+	text-align: center;
+}
+.highlight {
+	color: #FEE94F;	
+}
+/* ------------------ */
+#mapContainer {
+    float: left;
+    height: 400px;
+    width: 550px;    
+	margin-bottom: 10px;
+}
+.mavatar {
+	width: 300px;
+}
+.minfo {
+	float: left;
+}
+.mavatar img.photo {
+	float: left;
+	width: 100px;
+	height: 100px;
+	background-color: #CCC;
+	border: 3px solid #CCC;
+}
+.mname {
+	display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 5px 10px;
+}
+.mage {
+	display: block;
+    font-size: 14px;
+    margin-left: 5px;
+    padding: 0 10px;	
+}
+.status {
+	display: block;
+    margin-left: 5px;
+    padding: 10px;
+}
+
+.viewprofile {
+    float: right;
+    font-size: 12px;
+    margin-top: 2px;
+}
