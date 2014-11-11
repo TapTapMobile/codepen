@@ -1,3 +1,5 @@
+<html>
+<body>
 <script src="mraid.js"></script> 
 <div class="adContainer" style="background:#fff;width:320px;position:relative;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.5">
 <img style="position:absolute;top:0px;right:0px;width: 50px;height: 50px;background-size: 50px 50px;" src="http://www.taptap.mobi/codepen/mraid-ad/assets/close.png" onclick="javascript:collapse();"/>
@@ -14,8 +16,6 @@
 <link rel="stylesheet" type="text/css" href="http://www.taptap.mobi/codepen/mraid-ad/style.css" />
 <script>function openSite(e){mraid.open(e)}function centerAd(e,t){var n=0;var r=0;if(mraid.getState()=="expanded"){n=(e-320)/2;r=(t-250)/2;document.getElementById("adContainer").style.margin=r+"px "+n+"px "+r+"px "+n+"px"}document.getElementById("adContainer").style.margin=r+"px "+n+"px "+r+"px "+n+"px"}function collapse(){mraid.close()}function setupViewport(e){var t=document.querySelector("meta[name=viewport]");if(!t){t=document.createElement("meta");t.name="viewport";t.content="width="+e+", user-scalable=no";document.getElementsByTagName("head")[0].appendChild(t)}else{t.content="width="+e+", user-scalable=no"}}function mraidIsReady(){mraid.removeEventListener("ready",mraidIsReady);showMyAd()}function showMyAd(){mraid.addEventListener("sizeChange",centerAd)}function doReadyCheck(){if(mraid.getState()=="loading"){mraid.addEventListener("ready",mraidIsReady)}else{showMyAd()}}setupViewport(320);doReadyCheck()</script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<<<<<<< HEAD
 <script src="http://www.taptap.mobi/codepen/mraid-ad/script-swipe.js"></script> 
-=======
-<script src="http://www.taptap.mobi/codepen/mraid-ad/script-swipe.js"></script> 
->>>>>>> origin/gh-pages
+</body>
+</html>
