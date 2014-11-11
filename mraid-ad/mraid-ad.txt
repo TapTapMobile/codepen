@@ -1,0 +1,19 @@
+<script src="mraid.js"></script> 
+<div class="adContainer" style="background:#fff;width:320px;position:relative;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.5">
+<img style="position:absolute;top:0px;right:0px;width: 50px;height: 50px;background-size: 50px 50px;" src="close.png" onclick="javascript:collapse();"/>
+  <div class="ad-head" style="height:80px;width:100%;background:url(beflirty-logo.png) no-repeat"></div>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"> <img src="http://www.taptap.mobi/codepen/swipe_gallery_template/assets/1.png"> </div>
+      <div class="swiper-slide"> <img src="http://www.taptap.mobi/codepen/swipe_gallery_template/assets/2.png"> </div>
+      <div class="swiper-slide"> <img src="http://www.taptap.mobi/codepen/swipe_gallery_template/assets/3.png"> </div>
+    </div>
+  </div>
+  <div class="ad-foot" style="text-align:center;height:70px;padding-top:10px"> <img alt="" src="meet-button.png" onclick="javascript:openSite('http://www.google.com');" > </div>
+</div>
+<style type="text/css">.ad-head{}.swiper-container{margin:0 auto;position:relative;overflow:hidden;-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;-o-backface-visibility:hidden;backface-visibility:hidden;z-index:1}.swiper-wrapper{position:relative;width:100%;-webkit-transition-property:-webkit-transform,left,top;-webkit-transition-duration:0s;-webkit-transform:translate3d(0px,0,0);-webkit-transition-timing-function:ease;-moz-transition-property:-moz-transform,left,top;-moz-transition-duration:0s;-moz-transform:translate3d(0px,0,0);-moz-transition-timing-function:ease;-o-transition-property:-o-transform,left,top;-o-transition-duration:0s;-o-transition-timing-function:ease;-o-transform:translate(0px,0);-ms-transition-property:-ms-transform,left,top;-ms-transition-duration:0s;-ms-transform:translate3d(0px,0,0);-ms-transition-timing-function:ease;transition-property:transform,left,top;transition-duration:0s;transform:translate3d(0px,0,0);transition-timing-function:ease;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}.swiper-free-mode>.swiper-wrapper{-webkit-transition-timing-function:ease-out;-moz-transition-timing-function:ease-out;-ms-transition-timing-function:ease-out;-o-transition-timing-function:ease-out;transition-timing-function:ease-out;margin:0 auto}.swiper-slide{float:left;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}.swiper-wp8-horizontal{-ms-touch-action:pan-y}.swiper-wp8-vertical{-ms-touch-action:pan-x}.swiper-container{height:320px;width:320px}
+</style>
+<script>function openSite(e){mraid.open(e)}function centerAd(e,t){var n=0;var r=0;if(mraid.getState()=="expanded"){n=(e-320)/2;r=(t-250)/2;document.getElementById("adContainer").style.margin=r+"px "+n+"px "+r+"px "+n+"px"}document.getElementById("adContainer").style.margin=r+"px "+n+"px "+r+"px "+n+"px"}function collapse(){mraid.close()}function setupViewport(e){var t=document.querySelector("meta[name=viewport]");if(!t){t=document.createElement("meta");t.name="viewport";t.content="width="+e+", user-scalable=no";document.getElementsByTagName("head")[0].appendChild(t)}else{t.content="width="+e+", user-scalable=no"}}function mraidIsReady(){mraid.removeEventListener("ready",mraidIsReady);showMyAd()}function showMyAd(){mraid.addEventListener("sizeChange",centerAd)}function doReadyCheck(){if(mraid.getState()=="loading"){mraid.addEventListener("ready",mraidIsReady)}else{showMyAd()}}setupViewport(320);doReadyCheck()</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="script.js"></script> 
+<script>var mySwiper = new Swiper('.swiper-container',{loop:true,grabCursor: true})</script>
