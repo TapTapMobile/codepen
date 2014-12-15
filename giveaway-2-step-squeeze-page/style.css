@@ -1,0 +1,316 @@
+@font-face {
+    font-family: 'Segoe-UI-SemiBold';
+    src: url('fonts/segoe-ui-semibold.eot');
+    src: url('fonts/segoe-ui-semibold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/segoe-ui-semibold.woff') format('woff'),
+         url('fonts/segoe-ui-semibold.ttf') format('truetype'),
+         url('fonts/segoe-ui-semibold.svg#Segoe-UI-SemiBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo300';
+    src: url('fonts/museo300-regular-webfont.eot');
+    src: url('fonts/museo300-regular-webfont.eot?#iefix') format('eot'),
+         url('fonts/museo300-regular-webfont.woff') format('woff'),
+         url('fonts/museo300-regular-webfont.ttf') format('truetype'),
+         url('fonts/museo300-regular-webfont.svg#webfontJA9Sojwh') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Museo500';
+    src: url('fonts/museo500-regular-webfont.eot');
+    src: url('fonts/museo500-regular-webfont.eot?#iefix') format('eot'),
+         url('fonts/museo500-regular-webfont.woff') format('woff'),
+         url('fonts/museo500-regular-webfont.ttf') format('truetype'),
+         url('fonts/museo500-regular-webfont.svg#webfontGF4BwnoR') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe-UI';
+    src: url('fonts/segoe-ui.eot');
+    src: url('fonts/segoe-ui.eot?#iefix') format('embedded-opentype'),
+         url('fonts/segoe-ui.woff') format('woff'),
+         url('fonts/segoe-ui.ttf') format('truetype'),
+         url('fonts/segoe-ui.svg#Segoe-UI') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe-UI-Bold';
+    src: url('fonts/segoe-ui-bold.eot');
+    src: url('fonts/segoe-ui-bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/segoe-ui-bold.woff') format('woff'),
+         url('fonts/segoe-ui-bold.ttf') format('truetype'),
+         url('fonts/segoe-ui-bold.svg#Segoe-UI-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* { margin: 0; padding: 0; outline: 0; }
+
+body, html { height: 100%; }
+.clear{ clear: both; }
+
+body {
+    font-size: 18px;
+    line-height: 26px;
+    font-family: 'Segoe-UI', Georgia, times, serif;
+	letter-spacing: -1px;
+    color: #555555;
+    background: #ffffff;
+   	min-width: 960px;
+}
+
+.shell{
+	margin: 0 auto;
+	padding: 0;
+	width: 960px;
+}	
+
+.fb_edge_widget_with_comment {
+	float: left;
+    margin: 35px 0 0 25px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.fb_edge_widget_with_comment {
+		float: left;
+		margin: 35px 0 0 25px;
+	}
+}
+
+header{
+	height: 102px;
+}
+
+#header-logo{
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 188px;
+	height: 102px;
+}
+#header-logo img { padding: 30px 0;}
+
+#content{
+
+	
+/*   gradients    */
+
+background: #20a2ed; /* Old browsers */
+background: -moz-linear-gradient(top,  #20a2ed 0%, #47bbff 49%, #20a2ed 100%, #20a2ed 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#20a2ed), color-stop(49%,#47bbff), color-stop(100%,#20a2ed), color-stop(100%,#20a2ed)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #20a2ed 0%,#47bbff 49%,#20a2ed 100%,#20a2ed 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #20a2ed 0%,#47bbff 49%,#20a2ed 100%,#20a2ed 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #20a2ed 0%,#47bbff 49%,#20a2ed 100%,#20a2ed 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #20a2ed 0%,#47bbff 49%,#20a2ed 100%,#20a2ed 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#20a2ed', endColorstr='#20a2ed',GradientType=0 ); /* IE6-9 */
+
+/* end gradients */
+
+	background: url(images/bg-overlay1.png) 0 0 repeat-x, url(images/bg-overlay2-bottom.png) 0 bottom repeat-x;
+	background-color: #3fb8fc;
+	padding: 0 0 50px 0;
+	
+}
+
+#content .shell{
+	background: url(images/section-top1-bg-v1.png) 0 0 no-repeat;
+}
+
+#content h2{
+	font-family: 'Segoe-UI-Bold', Georgia, times, serif;
+	font-size: 27px;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: -1px;
+	line-height: 30px;
+	color: #ffffff;
+	text-shadow: 1px 1px 2px #7b7b7b;
+	padding: 20px 0 0 0;
+}
+
+#content span{
+	color: #ffea00;
+}
+
+#steps{
+	width: 100%;
+	margin: 30px 0;
+}
+
+#step1{ float: left; }
+#step2{ float: left; width: 315px; text-align: center; background: url(images/step2-bg.png) -105px 0 no-repeat;}
+.wrap{ float: right; width: 250px; text-align: center; padding: 0 20px 0 0;}
+
+#video-placeholder{
+	width: 629px;
+	height:354px;
+	background: url(images/video.png) 0 0 no-repeat;
+	border: 8px solid #23a2f2;
+}
+
+.title{
+	margin: 0 auto;
+	padding: 20px 0;
+	text-align: center;
+	font-family: 'Segoe-UI-Bold', Georgia, times, serif;
+	color: #0097ec;
+	font-size: 36px;
+  
+}
+
+#step1 .title span { 
+	font-family: 'Segoe-UI-SemiBold', Georgia, times, serif; 
+	color: #ffffff; 
+}
+
+#step2 p{
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe-UI-SemiBold', Georgia, times, serif;
+	font-size: 30px;
+	color: #ffffff;
+	text-shadow: 1px 1px 2px #7b7b7b;
+	line-height: 30px;
+	letter-spacing: -1px;
+}
+
+#step2 p span{font-size: 22px; color: #ffffff; text-shadow: 1px 1px 2px #7b7b7b;}
+#step1 h3 span{text-shadow: 1px 1px 2px #7b7b7b;}
+
+#book{
+	margin: 10px 0 5px 0;
+}
+
+a#button{
+	float: right;
+	margin: 0 auto;
+	width: 243px;
+	height: 40px;
+	padding: 3px 0;
+	background: url(images/submit-button.png) 0 0 no-repeat;
+	color: #a68800;
+	font-family: 'Segoe-UI-SemiBold', Georgia, times, serif; 
+	font-size: 18px;
+	text-align: center;
+	line-height: 35px;
+	display: block;
+	text-decoration: none;
+	border: none;
+	text-shadow: none;
+}
+
+footer{
+	height: 100px;
+	background-color: #ffffff;
+	margin: 0px;
+	padding-top: 10px;
+	border-top: 1px solid #ececec;
+	overflow: hidden;
+}
+
+footer p{
+	font-size: 14px;
+	text-align: center;
+	font-family: 'Segoe-UI', Georgia, times, serif;
+	margin: 0;
+	color: #555555;
+}
+
+footer p.legal{ margin: 30px auto; padding-bottom: 10px; }
+
+footer p a{
+	color: #555555;
+	text-decoration: underline;
+}
+
+
+
+
+
+/* popup */
+
+.popup { width: 714px; height: 244px; text-align: center; overflow: hidden; background-color: #ffffff; background: url(images/popupbg.png) top right no-repeat;}
+.popup h1 { font-size: 24px; text-align: center; font-weight: normal; padding: 18px 0 10px 0; margin: 0 0 0 -7px; word-spacing: 1px; font-family: 'Open Sans', sans-serif; color: #333333; }
+.popup p { font-family: 'Open Sans', sans-serif; color: #333333; font-size: 24px; padding: 10px 0 14px 0; }
+.row { width: 514px; margin: 0 auto; border: solid 8px #1b98df;}
+.row input { border: none; width: 496px; height: 37px; background: url(images/inp.jpg) repeat-x; border-left: solid 1px #cacaca; border-right: solid 1px #cacaca; font-size: 18px; line-height: 26px; color: #595959; padding: 4px 8px 0 8px; }
+.submit { border: none; cursor: pointer; margin: 14px auto 0 auto; display: block; padding-right: 15px; width: 257px; height: 61px; background: #1b98df url(images/pop-submit-button.png) no-repeat 0 0 ; font-size: 24px; letter-spacing: 0px;  color: #fff; text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.55); font-family: 'Open Sans', sans-serif; text-indent: -999px; }
+
+
+/*  --------------------------------------------------
+    Reveal Modals
+    -------------------------------------------------- */
+        
+    .reveal-modal-bg { 
+        position: fixed; 
+        height: 100%;
+        width: 100%;
+        background: #000;
+        background: rgba(0,0,0,.8);
+        z-index: 100;
+        display: none;
+        top: 0;
+        left: 0; 
+        }
+    
+    .reveal-modal {
+        visibility: hidden;
+        top: 100px; 
+        left: 45%;
+        margin-left: -300px;
+        width: 714px;
+        height: 244px;
+        background: #fff no-repeat -200px -80px;
+        position: absolute;
+        z-index: 101;
+        /*padding: 30px 40px 34px;*/
+        /*-moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;*/
+        -moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+        -webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+        -box-shadow: 0 0 10px rgba(0,0,0,.4);
+        }
+        
+    .reveal-modal.small         { width: 200px; margin-left: -140px;}
+    .reveal-modal.medium        { width: 400px; margin-left: -240px;}
+    .reveal-modal.large         { width: 600px; margin-left: -340px;}
+    .reveal-modal.xlarge        { width: 800px; margin-left: -440px;}
+    
+    .reveal-modal .close-reveal-modal {
+        font-size: 22px;
+        line-height: .5;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        color: #aaa;
+        text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+        font-weight: bold;
+        cursor: pointer;
+        } 
+    /*
+        
+    NOTES
+    
+    Close button entity is &#215;
+    
+    Example markup
+    
+    <div id="myModal" class="reveal-modal">
+        <h2>Awesome. I have it.</h2>
+        <p class="lead">Your couch.  I it's mine.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices aliquet placerat. Duis pulvinar orci et nisi euismod vitae tempus lorem consectetur. Duis at magna quis turpis mattis venenatis eget id diam. </p>
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+    
+    */

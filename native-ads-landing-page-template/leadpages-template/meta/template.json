@@ -1,0 +1,154 @@
+{
+	"id": "4303",
+	"name": "Native Ads", 
+	"mobile": true, 
+	"notes": "Changed period to question mark for Jack", 
+	"syntax": 4, 
+	"version": 1.08,
+	"style": {
+		"html": "",
+		"replacements": [
+			{
+				"type": "color", 
+				"name": "Background", 
+				"find": "#e3e3e3"
+			},
+			{
+				"type": "color", 
+				"name": "Secondary Background", 
+				"find": "#fffffe"
+			},
+			{
+				"type": "color", 
+				"name": "Text", 
+				"find": "#000001"
+			},
+			{
+				"type": "color", 
+				"name": "Header Background", 
+				"find": "#eeeeee"
+			},
+			{
+				"type": "color", 
+				"name": "Divider Lines", 
+				"find": "#000002"
+			},
+			{
+				"type": "color", 
+				"name": "Date Background", 
+				"find": "#000004"
+			},
+			{
+				"type": "color", 
+				"name": "Image Border", 
+				"find": "#000003"
+			},
+			{
+				"type": "color", 
+				"name": "Button Primary", 
+				"find": "#c51314"
+			},
+			{
+				"type": "color", 
+				"name": "Button Secondary", 
+				"find": "#a50909"
+			},
+			{
+				"type": "color", 
+				"name": "Disclaimer Background", 
+				"find": "#eeeeed"
+			}
+		]
+	},
+	"elements": [
+		{
+			"id": "site-header",
+			"name": "Header",
+			"type": "container"
+		},
+		{
+			"id": "site-header-logo",
+			"name": "Logo",
+			"type": "image",
+			"data": {
+				"max-width": 260,
+				"max-height": 55
+			}
+		},
+		{
+			"id": "site-header-text",
+			"name": "Text",
+			"type": "text"
+		},
+		{
+			"id": "site-header-advertisement",
+			"name": "Advertisement",
+			"type": "text"
+		},
+		{
+			"id": "section-content",
+			"name": "Content Section",
+			"type": "container"
+		},
+		{
+			"id": "section-content-title",
+			"name": "Title",
+			"type": "text"
+		},
+		{
+			"id": "section-content-date-wrap",
+			"name": "Date Area",
+			"type": "container"
+		},
+		{
+			"id": "section-content-date",
+			"name": "Date",
+			"type": "text"
+		},
+		{
+			"id": "section-content-image",
+			"name": "Image",
+			"type": "image",
+			"data": {
+				"max-width": 400,
+				"max-height": 300
+			}
+		},
+		{
+			"id": "section-content-text",
+			"name": "Text",
+			"type": "text"
+		},
+		{
+			"id": "section-content-button",
+			"name": "Button",
+			"type": "link"
+		},
+		{
+			"id": "section-disclaimer",
+			"name": "Disclaimer",
+			"type": "container"
+		},
+		{
+			"id": "section-disclaimer-lines",
+			"name": "Lines",
+			"type": "container"
+		},
+		{
+			"id": "section-disclaimer-text",
+			"name": "Text",
+			"type": "text"
+		},
+		{
+			"id": "site-footer",
+			"name": "Footer",
+			"type": "container"
+		},
+		{
+			"id": "site-footer-link",
+			"name": "Link",
+			"type": "link"
+		}
+	],
+	"variables": {}
+}
