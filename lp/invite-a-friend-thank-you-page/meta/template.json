@@ -1,0 +1,416 @@
+{
+    "id": "arillera-0002",
+    "name": "SaaS Marketing Bundle", 
+    "mobile": true, 
+    "notes": "Initial upload with upgrade to syntax 4", 
+    "syntax": 4, 
+    "version": 1.12,
+    "elements": [
+        {
+            "id": "header-section",
+            "type": "container"
+        },
+        {
+            "id": "logo",
+            "name": "Logo",
+            "type": "image-link",
+            "data": {
+                "max-width": 250,
+                "max-height": 200,
+                "alternate-sources": []
+            }
+        },
+        {
+            "id": "banner-section",
+            "type": "container"
+        },
+        {
+            "id": "banner-left",
+            "type": "container"
+        },
+        {
+            "id": "banner-image",
+            "name": "Banner Image",
+            "type": "image",
+            "data": {
+                "max-width": 310,
+                "max-height": 216,
+                "alternate-sources": []
+            }
+        },
+        {
+            "id": "banner-right",
+            "type": "container"
+        },
+        {
+            "id": "headline",
+            "name": "Headline",
+            "type": "text"
+        },
+        {
+            "id": "subheadline",
+            "name": "Subheadline",
+            "type": "text"
+        },
+        {
+            "id": "optin-button",
+            "name": "Opt In Button",
+            "type": "link"
+
+        },
+        {
+            "id": "privacy-icon",
+            "name": "Privacy Icon",
+            "type": "image",
+            "data": {
+                "max-width": 14,
+                "max-height": 18,
+                "alternate-sources": []
+            }
+        },
+        {
+            "id": "privacy-text",
+            "name": "Privacy Text",
+            "type": "text"
+        },
+        {
+            "id": "benefits-section",
+            "type": "container"
+        },
+        {
+            "id": "benefits-title",
+            "name": "Benefits Title",
+            "type": "text"
+        },
+        {
+            "id": "benefits-boxes",
+            "type": "container"
+        },
+        {
+            "id": "benefit-box01",
+            "type": "container"
+        },
+        {
+            "id": "benefit-box-text01",
+            "name": "Benefit Box Text 01",
+            "type": "text"
+        },
+        {
+            "id": "benefit-box-divider01",
+            "name": "Benefit Box Divider 01",
+            "type": "image",
+            "data": {
+                "max-width": 27,
+                "max-height": 119,
+                "alternate-sources": []
+            }
+        },
+        {
+            "id": "benefit-box02",
+            "type": "container"
+        },
+        {
+            "id": "benefit-box-text02",
+            "name": "Benefit Box Text 02",
+            "type": "text"
+        },
+        {
+            "id": "benefit-box-divider02",
+            "name": "Benefit Box Divider 02",
+            "type": "image",
+            "data": {
+                "max-width": 27,
+                "max-height": 119,
+                "alternate-sources": []
+            }
+        },
+        {
+            "id": "benefit-box03",
+            "type": "container"
+        },
+        {
+            "id": "benefit-box-text03",
+            "name": "Benefit Box Text 03",
+            "type": "text"
+        },
+        {
+            "id": "benefit-box-divider03",
+            "name": "Benefit Box Divider 03",
+            "type": "image",
+            "data": {
+                "max-width": 27,
+                "max-height": 119,
+                "alternate-sources": []
+            }
+        },
+        {
+            "id": "benefit-box04",
+            "type": "container"
+        },
+        {
+            "id": "benefit-box-text04",
+            "name": "Benefit Box Text 04",
+            "type": "text"
+        },
+        {
+            "id": "content-section",
+            "type": "container"
+        },
+        {
+            "id": "content-title",
+            "name": "Content Title",
+            "type": "text"
+        },
+        {
+            "id": "content-text",
+            "name": "Content Text",
+            "type": "text"
+        },
+        {
+            "id": "content-left",
+            "name": "Content Text",
+            "type": "text"
+        },
+        {
+            "id": "content-right",
+            "type": "container"
+        },
+        {
+            "id": "content-right-image",
+            "name": "Content Image",
+            "type": "image",
+            "data": {
+                "max-width": 223,
+                "max-height": 221,
+                "alternate-sources": []
+            }
+        },
+        {
+            "id": "content-right-title",
+            "name": "Content Right Title",
+            "type": "text"
+        },
+        {
+            "id": "content-right-text",
+            "name": "Content Right Text",
+            "type": "text"
+        },
+        {
+            "id": "cta-section",
+            "type": "container"
+        },
+        {
+            "id": "cta-title",
+            "name": "Call to Action Title",
+            "type": "text"
+        },
+        {
+            "id": "cta-text",
+            "name": "Call to Action Text",
+            "type": "text"
+        },
+        {
+            "id": "bottom-button-section",
+            "type": "container"
+        },
+        {
+            "id": "Footer-image",
+            "name": "Footer Image",
+            "type": "image",
+            "data": {
+                "max-width": 1920,
+                "max-height": 321,
+                "alternate-sources": []
+            }
+        },
+        {
+            "id": "footer",
+            "type": "container"
+        },
+        {
+            "id": "footer-text",
+            "name": "Footer Text",
+            "type": "text"
+        },
+        {
+            "id": "copyright-text",
+            "name": "Copyright Text",
+            "type": "text"
+        }
+    ],
+    "style": {
+        "html": "",
+        "replacements": [
+            {
+                "type": "color", 
+                "name": "Header Background", 
+                "find": "#FFFEFE"
+            }, 
+            {
+                "type": "color", 
+                "name": "Banner Background", 
+                "find": "#1A7ABC"
+            },
+            {
+                "type": "color", 
+                "name": "Banner Headline", 
+                "find": "#FFFFFE"
+            }, 
+            {
+                "type": "color", 
+                "name": "Banner Subheadline", 
+                "find": "#FEFFFF"
+            }, 
+            {
+                "type": "color", 
+                "name": "Button", 
+                "find": "#FAAB1F"
+            },
+            {
+                "type": "color", 
+                "name": "Button Text", 
+                "find": "#FFFEFF"
+            }, 
+            {
+                "type": "color", 
+                "name": "Button Text Shadow", 
+                "find": "#A65600"
+            }, 
+            {
+                "type": "color", 
+                "name": "Button Border", 
+                "find": "#E59520"
+            }, 
+            {
+                "type": "color", 
+                "name": "Button Hover", 
+                "find": "#e59911"
+            }, 
+            {
+                "type": "color", 
+                "name": "Button Border Hover", 
+                "find": "#d78b1b"
+            }, 
+            {
+                "type": "color", 
+                "name": "Privacy Text", 
+                "find": "#88BEE4"
+            }, 
+            {
+                "type": "color", 
+                "name": "Benefits Section Background", 
+                "find": "#eff0f1"
+            }, 
+            {
+                "type": "color", 
+                "name": "Benefits Title", 
+                "find": "#1A78BC"
+            }, 
+            {
+                "type": "color", 
+                "name": "Benefits Text", 
+                "find": "#464646"
+            }, 
+            {
+                "type": "color", 
+                "name": "Content Background", 
+                "find": "#FEFFFE"
+            }, 
+            {
+                "type": "color", 
+                "name": "Content Title", 
+                "find": "#1A77BC"
+            }, 
+            {
+                "type": "color", 
+                "name": "Content Text", 
+                "find": "#333333"
+            }, 
+            {
+                "type": "color", 
+                "name": "Content Text Bold", 
+                "find": "#1A7AC0"
+            }, 
+            {
+                "type": "color", 
+                "name": "Content Number Circle", 
+                "find": "#1978BA"
+            }, 
+            {
+                "type": "color", 
+                "name": "Content Number Text", 
+                "find": "#FBF6F6"
+            }, 
+            {
+                "type": "color", 
+                "name": "Content Right Title", 
+                "find": "#23B777"
+            }, 
+            {
+                "type": "color", 
+                "name": "Content Right Text", 
+                "find": "#464647"
+            }, 
+            {
+                "type": "color", 
+                "name": "Content Right Bold", 
+                "find": "#FAAB20"
+            }, 
+            {
+                "type": "color", 
+                "name": "Call to Action Background", 
+                "find": "#EFF1F1"
+            }, 
+            {
+                "type": "color", 
+                "name": "Call to Action Title", 
+                "find": "#1978B9"
+            }, 
+            {
+                "type": "color", 
+                "name": "Call to Action Text", 
+                "find": "#484747"
+            }, 
+            {
+                "type": "color", 
+                "name": "Call to Action Bold", 
+                "find": "#1D7BBC"
+            }, 
+            {
+                "type": "color", 
+                "name": "Bottom Button Background", 
+                "find": "#1B7BBD"
+            }, 
+            {
+                "type": "color", 
+                "name": "Footer Background", 
+                "find": "#0E588A"
+            },
+            {
+                "type": "color", 
+                "name": "Footer Text", 
+                "find": "#1E90DE"
+            },
+            {
+                "type": "color", 
+                "name": "Footer Divider", 
+                "find": "#1879BC"
+            },
+            {
+                "type": "color", 
+                "name": "Footer Copyright", 
+                "find": "#1B8EDC"
+            }, 
+            {
+                "type": "font", 
+                "name": " Main Font", 
+                "find": "'Open Sans'"
+            },
+            {
+                "type": "font", 
+                "name": " Secondary Font", 
+                "find": "'Montserrat'"
+            }
+        ]
+    }
+}
