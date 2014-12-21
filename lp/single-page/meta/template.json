@@ -1,0 +1,109 @@
+{
+    "name": "(New) Basic Squeeze Page",
+    "id": "4224",
+    "mobile": true,
+    "notes": "Font issue on PC.",
+    "syntax": 4,
+    "version": 4.16,
+    "style": {
+        "replacements": [
+            {
+                "type": "font",
+                "name": "Main Font",
+                "find": "'Open Sans'"
+            },
+            {
+                "type":"color",
+                "name": "Box Background",
+                "find": "#233d53"
+            },
+            {
+                "type": "color",
+                "name": "Headline Text",
+                "find": "#fefefe"
+            },
+            {
+                "type": "color",
+                "name": "Text",
+                "find": "#a4d9ff"
+            },
+            {
+                "type": "color",
+                "name": "Copyright Text",
+                "find": "#073051"
+            },
+            {
+                "type": "color",
+                "name": "Button Text",
+                "find": "#fcfcfc"
+            },
+            {
+                "type": "color",
+                "name": "Button Background",
+                "find": "#ffc600"
+            },
+            {
+                "type": "color",
+                "name": "Button Background Hover",
+                "find": "#059edd"
+            }
+        ]
+    },
+    "elements": [
+        {
+            "comment": "Background is aligned to the top left of browser and scales proportionally to fit width.",
+            "data": {
+                "alternate-sources": [
+                    "img/background-one.png",
+                    "img/background-two.png",
+                    "img/background-three.png"
+                ]
+            },
+            "type": "image",
+            "id": "background-img",
+            "name": "Background Image"
+        },
+        {
+            "type": "container",
+            "id": "content-box"
+        },
+        {
+            "data": {
+                "max-width": 322,
+                "max-height": 322
+            },
+            "type": "image-link",
+            "id": "logo",
+            "name": "Logo"
+        },
+        {
+            "type": "text",
+            "id": "primary-headline",
+            "name": "Headline"
+        },
+        {
+            "type": "text",
+            "id": "primary-subheadline",
+            "name": "Subheadline"
+        },
+        {
+            "type": "link",
+            "id": "optin-button",
+            "name": "Opt In Button"
+        },
+        {
+            "type": "text",
+            "id": "subtext",
+            "name": "Privacy Statement"
+        },
+        {
+            "type": "text",
+            "id": "footer",
+            "name": "Footer"
+        }
+    ],
+    "migrate": {
+        "logo":"logo-link",
+        "optin-button":"opt-in-submit"
+    }
+}
