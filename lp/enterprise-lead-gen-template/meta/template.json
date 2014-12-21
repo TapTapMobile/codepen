@@ -1,0 +1,176 @@
+{
+	"id": "4304",
+	"name": "Enterprise Lead Gen Page", 
+	"mobile": true, 
+	"notes": "I hate our input filters", 
+	"syntax": 4, 
+	"version": 1.11,
+	"style": {
+		"html": "",
+		"replacements": [
+			{
+				"type": "color", 
+				"name": "Background", 
+				"find": "#fffffe"
+			},
+			{
+				"type": "color", 
+				"name": "Footer Background", 
+				"find": "#f0f0f0"
+			},
+			{
+				"type": "color", 
+				"name": "Button Primary Color", 
+				"find": "#f08200"
+			},
+			{
+				"type": "color", 
+				"name": "Button Secondary Color", 
+				"find": "#e45a05"
+			},
+			{
+				"type": "color", 
+				"name": "Header Text Color", 
+				"find": "#a8a8a8"
+			},
+			{
+				"type": "color", 
+				"name": "List bullet color", 
+				"find": "#de6700"
+			},
+			{
+				"type": "color", 
+				"name": "List Text Color", 
+				"find": "#111110"
+			},
+			{
+				"type": "color", 
+				"name": "Footer Text Color", 
+				"find": "#999999"
+			}
+		]
+	},
+	"elements": [
+		{
+			"id": "site-header",
+			"name": "Header",
+			"type": "container"
+		},
+		{
+			"id": "site-header-logo",
+			"name": "Logo",
+			"type": "image",
+			"data": {
+				"max-width": 230,
+				"max-height": 50
+			}
+		},
+		{
+			"id": "site-header-right",
+			"name": "Right Area",
+			"type": "container"
+		},
+		{
+			"id": "site-header-right-image",
+			"name": "Icon",
+			"type": "image",
+			"data": {
+				"max-height": 26
+			}
+		},
+		{
+			"id": "site-header-right-text",
+			"name": "Text",
+			"type": "text"
+		},
+		{
+			"id": "section-content",
+			"name": "Content",
+			"type": "container"
+		},
+		{
+			"id": "section-content-title",
+			"name": "Title",
+			"type": "text"
+		},
+		{
+			"id": "section-content-subtitle",
+			"name": "Subtitle",
+			"type": "text"
+		},
+		{
+			"id": "section-content-left",
+			"name": "Left",
+			"type": "container"
+		},
+		{
+			"id": "section-content-left-image",
+			"name": "Product Image",
+			"type": "image",
+			"data": {
+				"max-width": 200
+			}
+		},
+		{
+			"id": "section-content-left-desc",
+			"name": "Description",
+			"type": "text"
+		},
+		{
+			"id": "section-content-left-beforelist",
+			"name": "Text Before",
+			"type": "text"
+		},
+		{
+			"id": "section-content-left-list",
+			"name": "List",
+			"type": "text"
+		},
+		{
+			"id": "section-content-left-afterlist",
+			"name": "Text After",
+			"type": "text"
+		},
+		{
+			"id": "section-content-right",
+			"name": "Right",
+			"type": "container"
+		},
+		{
+			"id": "section-content-right-title",
+			"name": "Title",
+			"type": "text"
+		},
+		{
+			"id": "section-content-right-desc",
+			"name": "Descrption",
+			"type": "text"
+		},
+		{
+			"id": "section-content-right-image",
+			"name": "Download Icon",
+			"type": "image",
+			"data": {
+				"max-width": 230
+			}
+		},
+		{
+			"id": "section-content-right-button",
+			"name": "Button",
+			"type": "link",
+			"data": {
+				"href": "#/optin"
+			}
+		},
+		{
+			"id": "site-footer",
+			"name": "Footer",
+			"type": "container"
+		},
+		{
+			"id": "site-footer-text",
+			"name": "Text",
+			"type": "text"
+		}
+	]
+}
