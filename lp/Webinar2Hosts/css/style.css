@@ -1,0 +1,697 @@
+/*
+#   $$$$$$\  $$\           $$\                 $$\
+#  $$  __$$\ $$ |          $$ |                $$ |
+#  $$ /  \__|$$ | $$$$$$\  $$$$$$$\   $$$$$$\  $$ | $$$$$$$\
+#  $$ |$$$$\ $$ |$$  __$$\ $$  __$$\  \____$$\ $$ |$$  _____|
+#  $$ |\_$$ |$$ |$$ /  $$ |$$ |  $$ | $$$$$$$ |$$ |\$$$$$$\
+#  $$ |  $$ |$$ |$$ |  $$ |$$ |  $$ |$$  __$$ |$$ | \____$$\
+#  \$$$$$$  |$$ |\$$$$$$  |$$$$$$$  |\$$$$$$$ |$$ |$$$$$$$  |
+#   \______/ \__| \______/ \_______/  \_______|\__|\_______/
+*/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+}
+body {
+	margin: 0;
+	padding: 0 20px;
+	min-width: 300px;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #fffffe;
+	word-wrap: break-word;
+	-webkit-font-smoothing: antialiased
+}
+a:link,
+a:visited {
+	color: #00c2a8;
+}
+a:hover,
+a:active {
+	color: #03a994;
+}
+
+/*
+#   $$$$$$\  $$\   $$\                     $$\   $$\                           $$\
+#  $$  __$$\ \__|  $$ |                    $$ |  $$ |                          $$ |
+#  $$ /  \__|$$\ $$$$$$\    $$$$$$\        $$ |  $$ | $$$$$$\   $$$$$$\   $$$$$$$ | $$$$$$\   $$$$$$\
+#  \$$$$$$\  $$ |\_$$  _|  $$  __$$\       $$$$$$$$ |$$  __$$\  \____$$\ $$  __$$ |$$  __$$\ $$  __$$\
+#   \____$$\ $$ |  $$ |    $$$$$$$$ |      $$  __$$ |$$$$$$$$ | $$$$$$$ |$$ /  $$ |$$$$$$$$ |$$ |  \__|
+#  $$\   $$ |$$ |  $$ |$$\ $$   ____|      $$ |  $$ |$$   ____|$$  __$$ |$$ |  $$ |$$   ____|$$ |
+#  \$$$$$$  |$$ |  \$$$$  |\$$$$$$$\       $$ |  $$ |\$$$$$$$\ \$$$$$$$ |\$$$$$$$ |\$$$$$$$\ $$ |
+#   \______/ \__|   \____/  \_______|      \__|  \__| \_______| \_______| \_______| \_______|\__|
+*/
+.site-header {
+	margin: 0 auto;
+	max-width: 800px;
+	text-align: center;
+}
+.site-header__intro {
+	display: block;
+	margin: 0;
+	padding: 25px 0 0;
+	font-size: 1rem;
+	font-weight: 400;
+	color: #333333;
+}
+.site-header__intro:after {
+	content: '';
+	display: block;
+	margin: 23px auto 0;
+	height: 1px;
+	width: 77%;
+	background: #333333;
+}
+.site-header__title {
+	margin: 30px 0;
+	font-size: 1.25rem;
+	font-weight: 700;
+	line-height: 1.3;
+	color: #333333;
+	text-transform: uppercase;
+}
+.site-header__title em {
+	color: #00c2a9;
+}
+.cta-btn {
+	display: inline-block;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	padding: 20px 10px;
+	max-width: 100%;
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: #ffffff;
+	background: #00c2a9;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.cta-btn:link {
+	color: #ffffff;
+}
+.cta-btn:hover {
+	border-color: #00c2a9;
+	background: transparent;
+	color: #00c2a9;
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+/*
+#  $$\      $$\           $$\       $$\
+#  $$ | $\  $$ |          $$ |      \__|
+#  $$ |$$$\ $$ | $$$$$$\  $$$$$$$\  $$\ $$$$$$$\   $$$$$$\   $$$$$$\
+#  $$ $$ $$\$$ |$$  __$$\ $$  __$$\ $$ |$$  __$$\  \____$$\ $$  __$$\
+#  $$$$  _$$$$ |$$$$$$$$ |$$ |  $$ |$$ |$$ |  $$ | $$$$$$$ |$$ |  \__|
+#  $$$  / \$$$ |$$   ____|$$ |  $$ |$$ |$$ |  $$ |$$  __$$ |$$ |
+#  $$  /   \$$ |\$$$$$$$\ $$$$$$$  |$$ |$$ |  $$ |\$$$$$$$ |$$ |
+#  \__/     \__| \_______|\_______/ \__|\__|  \__| \_______|\__|
+*/
+.main-content {
+	margin: 30px auto 15px;
+	max-width: 800px;
+}
+.webinar {
+	padding: 20px;
+	width: 100%;
+}
+.webinar--alpha {
+	background: #333330;
+}
+.webinar--beta {
+	padding-bottom: 25px;
+	background: #f1f1f1;
+}
+
+/*
+#              $$$$$$$$\ $$\
+#              \__$$  __|\__|
+#                 $$ |   $$\ $$$$$$\$$$$\   $$$$$$\
+#                 $$ |   $$ |$$  _$$  _$$\ $$  __$$\
+#                 $$ |   $$ |$$ / $$ / $$ |$$$$$$$$ |
+#                 $$ |   $$ |$$ | $$ | $$ |$$   ____|
+#                 $$ |   $$ |$$ | $$ | $$ |\$$$$$$$\
+#  $$$$$$\ $$$$$$\\__|   \__|\__| \__| \__| \_______|
+#  \______|\______|
+*/
+.webinar__time {
+	margin: 0 auto 30px;
+	max-width: 378px;
+}
+.webinar__time,
+.when {
+	overflow: hidden;
+	_overflow: visible;
+	zoom: 1;
+}
+.calendar {
+	float: left;
+	margin-right: 15px;
+	width:60px;
+	font-weight: 700;
+	text-align: center;
+}
+.calendar__month {
+	display: block;
+	margin: 0;
+	padding: 8px 0;
+	font-size: 0.625rem;
+	line-height: 1;
+	color: #f3f3f3;
+	background: #00c2a9;
+}
+.calendar__date {
+	display: block;
+	margin: 0;
+	padding: 5px 0 9px;
+	font-size: 2.8125rem;
+	line-height: 1;
+	color: #9d9c9c;
+	background: #fff;
+}
+.when {
+	color: #fffffd;
+}
+.when__day {
+	display: block;
+	margin: 0;
+	padding: 0;
+	font-size: 0.9375rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.when__month-date {
+	display: block;
+	margin: 0;
+	padding: 0;
+	font-size: 1.125rem;
+	font-weight: 700;
+}
+.when__time {
+	clear: both;
+	display: block;
+	margin: 8px 0 0;
+	border-top: 1px dashed #ababab;
+	padding: 4px 0 0;
+	font-size: 0.9375rem;
+	font-weight: 400;
+}
+
+/*
+#                 $$\   $$\                       $$\
+#                 $$ |  $$ |                      $$ |
+#                 $$ |  $$ | $$$$$$\   $$$$$$$\ $$$$$$\    $$$$$$$\
+#                 $$$$$$$$ |$$  __$$\ $$  _____|\_$$  _|  $$  _____|
+#                 $$  __$$ |$$ /  $$ |\$$$$$$\    $$ |    \$$$$$$\
+#                 $$ |  $$ |$$ |  $$ | \____$$\   $$ |$$\  \____$$\
+#                 $$ |  $$ |\$$$$$$  |$$$$$$$  |  \$$$$  |$$$$$$$  |
+#  $$$$$$\ $$$$$$\\__|  \__| \______/ \_______/    \____/ \_______/
+#  \______|\______|
+*/
+.webinar__hosts {
+	display: table;
+	table-layout: fixed;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	max-width: 378px;
+	list-style: none;
+}
+.host {
+	display: table-cell;
+	vertical-align: top;
+	width: 100%;
+	text-align: center;
+	color: #fffffd;
+}
+.host:first-child {
+	padding-right: 8px;
+}
+.host:last-child {
+	padding-left: 8px;
+}
+.host__photo {
+	display: block;
+	margin: 0 auto 20px;
+	border-radius: 50%;
+	border: 5px solid #fff;
+	width: 100%;
+	max-width: 170px;
+}
+.host__byline {
+	display: block;
+	margin: 0 0 7px;
+	padding: 0;
+	font-size: 1.125rem;
+	font-style: italic;
+	font-weight: 400;
+}
+.host__name {
+	display: block;
+	margin: 0;
+	padding: 0;
+	font-size: 1.375rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+/*
+#                 $$$$$$\                                 $$\           $$\
+#                $$  __$$\                                $$ |          $$ |
+#                $$ /  \__| $$$$$$\  $$\   $$\ $$$$$$$\ $$$$$$\    $$$$$$$ | $$$$$$\  $$\  $$\  $$\ $$$$$$$\
+#                $$ |      $$  __$$\ $$ |  $$ |$$  __$$\\_$$  _|  $$  __$$ |$$  __$$\ $$ | $$ | $$ |$$  __$$\
+#                $$ |      $$ /  $$ |$$ |  $$ |$$ |  $$ | $$ |    $$ /  $$ |$$ /  $$ |$$ | $$ | $$ |$$ |  $$ |
+#                $$ |  $$\ $$ |  $$ |$$ |  $$ |$$ |  $$ | $$ |$$\ $$ |  $$ |$$ |  $$ |$$ | $$ | $$ |$$ |  $$ |
+#                \$$$$$$  |\$$$$$$  |\$$$$$$  |$$ |  $$ | \$$$$  |\$$$$$$$ |\$$$$$$  |\$$$$$\$$$$  |$$ |  $$ |
+#  $$$$$$\ $$$$$$\\______/  \______/  \______/ \__|  \__|  \____/  \_______| \______/  \_____\____/ \__|  \__|
+#  \______|\______|
+*/
+.webinar-countdown {
+	margin: 0 0 35px;
+}
+.webinar-countdown__title {
+	margin: 0 0 15px;
+	padding: 0;
+	font-size: 1.125rem;
+	font-weight: 700;
+	color: #333333;
+	text-align: center;
+}
+/* Countdown Timer Styles */
+.countdown {
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	width: 254px;
+	list-style: none;
+}
+.countdown li {
+	float: left;
+	text-align: center;
+	margin: 0 3px;
+}
+.countdown li .flap {
+	border-radius: 3px;
+	background-color: #000001;
+	width: 56px;
+	height: 56px;
+	padding: 10px 0;
+	vertical-align: middle;
+	display: table-cell;
+}
+.countdown li .flap span {
+	width: 100%;
+	display: inline-block;
+	color: #fafafa;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 30px;
+	position: relative;
+	text-align: center;
+}
+.countdown p {
+	display: inline-block;
+	float: left;
+	font-weight: 700;
+	color: #555555;
+	font-size: 11px;
+	text-align: center;
+	width: 56px;
+	line-height: 1.3;
+	text-transform: uppercase;
+	margin: 1px 0 0 0;
+}
+
+/*
+#                 $$$$$$$\                                 $$$$$$\  $$\   $$\
+#                 $$  __$$\                               $$  __$$\ \__|  $$ |
+#                 $$ |  $$ | $$$$$$\  $$$$$$$\   $$$$$$\  $$ /  \__|$$\ $$$$$$\    $$$$$$$\
+#                 $$$$$$$\ |$$  __$$\ $$  __$$\ $$  __$$\ $$$$\     $$ |\_$$  _|  $$  _____|
+#                 $$  __$$\ $$$$$$$$ |$$ |  $$ |$$$$$$$$ |$$  _|    $$ |  $$ |    \$$$$$$\
+#                 $$ |  $$ |$$   ____|$$ |  $$ |$$   ____|$$ |      $$ |  $$ |$$\  \____$$\
+#                 $$$$$$$  |\$$$$$$$\ $$ |  $$ |\$$$$$$$\ $$ |      $$ |  \$$$$  |$$$$$$$  |
+#  $$$$$$\ $$$$$$\\_______/  \_______|\__|  \__| \_______|\__|      \__|   \____/ \_______/
+#  \______|\______|
+*/
+.webinar__benefits {
+
+}
+.benefits__title {
+	margin: 0 0 10px;
+	padding: 0;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #333333;
+}
+.benefits {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.benefits li {
+	display: block;
+	margin: 20px 0 0;
+	padding: 0 0 0 40px;
+	position: relative;
+	font-size: 1rem;
+	font-weight: 100;
+	line-height: 1.3;
+	color: #333333;
+}
+.benefits li:before {
+	content: '\f00c';
+	position: absolute;
+	top: -2px;
+	left: 0;
+	font-family: FontAwesome;
+	font-size: 1.5rem;
+	color: #00c2a9;
+}
+
+/*
+#   $$$$$$\  $$\
+#  $$  __$$\ $$ |
+#  $$ /  \__|$$$$$$$\   $$$$$$\   $$$$$$\   $$$$$$\
+#  \$$$$$$\  $$  __$$\  \____$$\ $$  __$$\ $$  __$$\
+#   \____$$\ $$ |  $$ | $$$$$$$ |$$ |  \__|$$$$$$$$ |
+#  $$\   $$ |$$ |  $$ |$$  __$$ |$$ |      $$   ____|
+#  \$$$$$$  |$$ |  $$ |\$$$$$$$ |$$ |      \$$$$$$$\
+#   \______/ \__|  \__| \_______|\__|       \_______|
+*/
+.share {
+	margin: 30px auto;
+	padding: 0;
+	list-style: none;
+	width: 270px;
+}
+.share li {
+	float: left;
+	margin: 0 10px 0 0;
+}
+.share li:last-child {
+	margin-right: 0;
+}
+.share li span {
+	display: block;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.share__btn {
+	display: block;
+	width: 80px;
+	height: 44px;
+	color: #ffffff;
+	position: relative;
+}
+.share__btn:link,
+.share__btn:hover,
+.share__btn:visited
+ {
+	color: #ffffff;
+}
+.share__btn:before {
+	display: block;
+	font-family: FontAwesome;
+	font-size: 18px;
+	position: absolute;
+	top: 14px;
+	left: 31px;
+	-webkit-transition: all 0.1s;
+	-o-transition: all 0.1s;
+	transition: all 0.1s;
+}
+.share__btn:hover:before {
+	-webkit-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+}
+.share__btn--twitter {
+	background: #00acee;
+}
+.share__btn--twitter:before {
+	content: '\f099';
+}
+.share__btn--facebook {
+	background: #3b5998;
+}
+.share__btn--facebook:before {
+	content: '\f09a';
+}
+.share__btn--google-plus {
+	background: #dd4b39;
+}
+.share__btn--google-plus:before {
+	content: '\f0d5';
+}
+
+/*
+#  $$\      $$\                               $$\
+#  $$ | $\  $$ |                              \__|
+#  $$ |$$$\ $$ | $$$$$$\   $$$$$$\  $$$$$$$\  $$\ $$$$$$$\   $$$$$$\
+#  $$ $$ $$\$$ | \____$$\ $$  __$$\ $$  __$$\ $$ |$$  __$$\ $$  __$$\
+#  $$$$  _$$$$ | $$$$$$$ |$$ |  \__|$$ |  $$ |$$ |$$ |  $$ |$$ /  $$ |
+#  $$$  / \$$$ |$$  __$$ |$$ |      $$ |  $$ |$$ |$$ |  $$ |$$ |  $$ |
+#  $$  /   \$$ |\$$$$$$$ |$$ |      $$ |  $$ |$$ |$$ |  $$ |\$$$$$$$ |
+#  \__/     \__| \_______|\__|      \__|  \__|\__|\__|  \__| \____$$ |
+#                                                           $$\   $$ |
+#                                                           \$$$$$$  |
+#                                                            \______/
+*/
+.warning {
+	margin: 0 auto 30px;
+	max-width: 800px;
+}
+.warning__msg {
+	margin: 0;
+	padding: 20px 20px 20px 75px;
+	font-size: 0.875rem;
+	line-height: 1.42;
+	color: #333333;
+	background: #fcf0f0;
+	position: relative;
+}
+.warning__msg:before {
+	content: '\f071';
+	font-family: FontAwesome;
+	font-size: 30px;
+	color: #e05b49;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.warning__cta {
+	margin: 0;
+	padding: 15px 20px;
+	font-size: 1.125rem;
+	font-style: italic;
+	text-align: center;
+	color: #fffffd;
+	background: #333332;
+	position: relative;
+}
+.warning__cta:after {
+	display: block;
+	content: '';
+	margin: 0 auto;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 16px 17px 0 17px;
+	border-color: #333332 transparent transparent transparent;
+	position: absolute;
+	bottom: -16px;
+	left: 0;
+	right: 0;
+}
+
+
+
+.cta-btn--full-width {
+	display: block;
+	margin: 0 auto 40px;
+	width: 100%;
+	max-width: 800px;
+}
+
+.facebook-comments-wrap {
+	margin: 0 auto 60px;
+	padding: 20px;
+	max-width: 800px;
+	background: #fff;
+}
+
+/*
+#   $$$$$$\  $$\   $$\                     $$$$$$$$\                   $$\
+#  $$  __$$\ \__|  $$ |                    $$  _____|                  $$ |
+#  $$ /  \__|$$\ $$$$$$\    $$$$$$\        $$ |    $$$$$$\   $$$$$$\ $$$$$$\    $$$$$$\   $$$$$$\
+#  \$$$$$$\  $$ |\_$$  _|  $$  __$$\       $$$$$\ $$  __$$\ $$  __$$\\_$$  _|  $$  __$$\ $$  __$$\
+#   \____$$\ $$ |  $$ |    $$$$$$$$ |      $$  __|$$ /  $$ |$$ /  $$ | $$ |    $$$$$$$$ |$$ |  \__|
+#  $$\   $$ |$$ |  $$ |$$\ $$   ____|      $$ |   $$ |  $$ |$$ |  $$ | $$ |$$\ $$   ____|$$ |
+#  \$$$$$$  |$$ |  \$$$$  |\$$$$$$$\       $$ |   \$$$$$$  |\$$$$$$  | \$$$$  |\$$$$$$$\ $$ |
+#   \______/ \__|   \____/  \_______|      \__|    \______/  \______/   \____/  \_______|\__|
+*/
+.site-footer {
+	margin: 0 -20px;
+	padding: 30px 0;
+	background: #f1f1f0;
+}
+.site-footer__fineprint {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 800px;
+	font-size: 0.875rem;
+	color: #333333;
+	text-align: center;
+}
+
+
+/*
+#  $$\      $$\                 $$\ $$\                  $$$$$$\                                $$\
+#  $$$\    $$$ |                $$ |\__|                $$  __$$\                               \__|
+#  $$$$\  $$$$ | $$$$$$\   $$$$$$$ |$$\  $$$$$$\        $$ /  $$ |$$\   $$\  $$$$$$\   $$$$$$\  $$\  $$$$$$\   $$$$$$$\
+#  $$\$$\$$ $$ |$$  __$$\ $$  __$$ |$$ | \____$$\       $$ |  $$ |$$ |  $$ |$$  __$$\ $$  __$$\ $$ |$$  __$$\ $$  _____|
+#  $$ \$$$  $$ |$$$$$$$$ |$$ /  $$ |$$ | $$$$$$$ |      $$ |  $$ |$$ |  $$ |$$$$$$$$ |$$ |  \__|$$ |$$$$$$$$ |\$$$$$$\
+#  $$ |\$  /$$ |$$   ____|$$ |  $$ |$$ |$$  __$$ |      $$ $$\$$ |$$ |  $$ |$$   ____|$$ |      $$ |$$   ____| \____$$\
+#  $$ | \_/ $$ |\$$$$$$$\ \$$$$$$$ |$$ |\$$$$$$$ |      \$$$$$$ / \$$$$$$  |\$$$$$$$\ $$ |      $$ |\$$$$$$$\ $$$$$$$  |
+#  \__|     \__| \_______| \_______|\__| \_______|       \___$$$\  \______/  \_______|\__|      \__| \_______|\_______/
+#                                                            \___|
+*/
+@media only screen and (min-width: 26em) {
+	.cta-btn {
+		padding: 20px 55px;
+		font-size: 1.5rem;
+	}
+	.when__day {
+		font-size: 1.125rem;
+	}
+	.when__month-date {
+		font-size: 1.625rem;
+	}
+	.when__time {
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (min-width: 30em) {
+	.calendar {
+		width: 114px;
+	}
+	.calendar__month {
+		font-size: 1.125rem;
+	}
+	.calendar__date {
+		font-size: 4.125rem;
+	}
+	.when__day {
+		font-size: 1.5rem;
+	}
+	.when__month-date {
+		font-size: 1.9375rem;
+	}
+	.when__time {
+		font-size: 1.125rem;
+	}
+	.benefits li {
+		font-size: 1.125rem;
+	}
+}
+
+@media only screen and (min-width: 38em) {
+	.site-header__intro {
+		font-size: 1.5rem;
+	}
+	.site-header__title {
+		font-size: 1.875rem;
+	}
+}
+
+@media only screen and (min-width: 43em) {
+	.webinar {
+		display: table-cell;
+		vertical-align: top;
+	}
+	.webinar--alpha {
+		width: 52.5%;
+		max-width: 420px;
+	}
+	.webinar--beta {
+		width: 47.5%;
+		max-width: 380px;
+	}
+	.calendar {
+		width:60px;
+	}
+	.calendar__month {
+		font-size: 0.625rem;
+	}
+	.calendar__date {
+		font-size: 2.8125rem;
+	}
+	.when__day {
+		font-size: 1.125rem;
+	}
+	.when__month-date {
+		font-size: 1.625rem;
+	}
+	.when__time {
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (min-width: 53em) {
+	.calendar {
+		width: 114px;
+	}
+	.calendar__month {
+		font-size: 1.125rem;
+	}
+	.calendar__date {
+		font-size: 4.125rem;
+	}
+	.when__day {
+		font-size: 1.5rem;
+	}
+	.when__month-date {
+		font-size: 1.9375rem;
+	}
+	.when__time {
+		font-size: 1.125rem;
+	}
+}
+
+@media only screen and (min-width: 62em) {
+	.main-content {
+		position: relative;
+	}
+	.share {
+		position: absolute;
+		top: 0;
+		left: -90px;
+		width: 80px;
+	}
+	.share li {
+		float: none;
+		margin: 0 0 10px;
+	}
+}

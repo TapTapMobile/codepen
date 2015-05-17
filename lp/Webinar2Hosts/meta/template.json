@@ -1,0 +1,349 @@
+{
+  "id": "4306",
+  "name": "Webinar 3.0 Page (Two-Hosts & High CTA Button)",
+  "mobile": true,
+  "notes": "Added protocol to @import for local viewing",
+  "syntax": 4,
+  "version": 1.14,
+  "style": {
+    "replacements": [
+      {
+        "type": "color",
+        "name": "Link Color",
+        "find": "#00c2a8"
+      },
+      {
+        "type": "color",
+        "name": "Link Hover Color",
+        "find": "#03a994"
+      },
+      {
+        "type": "color",
+        "name": "Primary Text Color",
+        "find": "#333333"
+      },
+      {
+        "type": "color",
+        "name": "Secondary Text Color",
+        "find": "#fffffd"
+      },
+      {
+        "type": "color",
+        "name": "Main Action Color",
+        "find": "#00c2a9"
+      },
+      {
+        "type": "color",
+        "name": "Body Background Color",
+        "find": "#fffffe"
+      },
+      {
+        "type": "color",
+        "name": "Left Column Background Color",
+        "find": "#333330"
+      },
+      {
+      	"type": "color",
+      	"name": "Schedule Dashed Line Color",
+      	"find": "#ababab"
+      },
+      {
+        "type": "color",
+        "name": "Right Column Background Color",
+        "find": "#f1f1f1"
+      },
+      {
+        "type": "color",
+        "name": "Countdown Background Color",
+        "find": "#000001"
+      },
+      {
+        "type": "color",
+        "name": "Countdown Text Color",
+        "find": "#fafafa"
+      },
+      {
+        "type": "color",
+        "name": "Countdown Units Text Color",
+        "find": "#555555"
+      },
+      {
+        "type": "color",
+        "name": "Warning Message Background Color",
+        "find": "#fcf0f0"
+      },
+      {
+        "type": "color",
+        "name": "Warning Icon Color",
+        "find": "#e05b49"
+      },
+      {
+        "type": "color",
+        "name": "Warning Call to Action Background Color",
+        "find": "#333332"
+      },
+      {
+        "type": "color",
+        "name": "Footer Background Color",
+        "find": "#f1f1f0"
+      }
+    ]
+	},
+	"variables": {
+		"facebookurl": {
+		  "variable": "facebookurl",
+		  "dafault": "",
+		  "name": "The URL to share on Facebook. Leave blank to share the current page."
+		},
+		"twitterurl": {
+		  "variable": "twitterurl",
+		  "dafault": "",
+		  "name": "The URL to share on Twitter. Leave blank to share the current page."
+		},
+		"googleurl": {
+		  "variable": "googleurl",
+		  "dafault": "",
+		  "name": "The URL to share on Google+. Leave blank to share the current page."
+		}
+	},
+	"elements": [
+		{
+			"id": "header",
+			"name": "Page Header",
+			"type": "container"
+		},
+		{
+			"id": "header-intro",
+			"name": "Introduction Text",
+			"type": "text"
+		},
+		{
+			"id": "header-headline",
+			"name": "Headline Text",
+			"type": "text"
+		},
+		{
+			"id": "header-cta",
+			"name": "Call to Action button",
+			"type": "link",
+			"data": {
+				"href": "#/optin"
+			}
+		},
+		{
+			"id": "calendar-container",
+			"name": "Schedule Box",
+			"type": "container"
+		},
+		{
+			"id": "calendar",
+			"name": "Calendar",
+			"type": "container"
+		},
+		{
+			"id": "calendar-month",
+			"name": "Calendar Month Text",
+			"type": "text"
+		},
+		{
+			"id": "calendar-date",
+			"name": "Calendar Date Text",
+			"type": "text"
+		},
+		{
+			"id": "schedule",
+			"name": "Schedule Box",
+			"type": "container"
+		},
+		{
+			"id": "day-text",
+			"name": "Day Text",
+			"type": "text"
+		},
+		{
+			"id": "month-date-text",
+			"name": "Month & Date Text",
+			"type": "text"
+		},
+		{
+			"id": "date-text",
+			"name": "Date Text",
+			"type": "text"
+		},
+		{
+			"id": "time-text",
+			"name": "Time Text",
+			"type": "text"
+		},
+		{
+			"id": "hosts-container",
+			"name": "Hosts Box",
+			"type": "container"
+		},
+		{
+			"id": "host-1",
+			"name": "Host 01",
+			"type": "container"
+		},
+		{
+			"id": "host-1-photo",
+			"name": "Profile Image 01",
+			"type": "image",
+			"comment": "Recommended image size is 170x170 pixels",
+			"data": {
+				"max-width": 170
+			}
+		},
+		{
+			"id": "host-1-byline",
+			"name": "Host 01 Byline",
+			"type": "text"
+		},
+		{
+			"id": "host-1-name",
+			"name": "Host 01 Name",
+			"type": "text"
+		},
+		{
+			"id": "host-2",
+			"name": "Host 02",
+			"type": "container"
+		},
+		{
+			"id": "host-2-photo",
+			"name": "Profile Image 02",
+			"type": "image",
+			"comment": "Recommended image size is 170x170 pixels",
+			"data": {
+				"max-width": 170
+			}
+		},
+		{
+			"id": "host-2-byline",
+			"name": "Host 02 Byline",
+			"type": "text"
+		},
+		{
+			"id": "host-2-name",
+			"name": "Host 02 Name",
+			"type": "text"
+		},
+		{
+			"id": "webinar-countdown",
+			"name": "Countdown Box",
+			"type": "container"
+		},
+		{
+			"id": "countdown-title",
+			"name": "Countdown Headline Text",
+			"type": "text"
+		},
+		{
+			"id": "countdown",
+			"name": "Countdown Timer",
+			"type": "countdown"
+		},
+		{
+			"id": "days-text",
+			"name": "Days Text",
+			"type": "text"
+		},
+		{
+			"id": "hours-text",
+			"name": "Hours Text",
+			"type": "text"
+		},
+		{
+			"id": "minutes-text",
+			"name": "Minutes Text",
+			"type": "text"
+		},
+		{
+			"id": "seconds-text",
+			"name": "Seconds Text",
+			"type": "text"
+		},
+		{
+			"id": "benefits-container",
+			"name": "Benefits Box",
+			"type": "container"
+		},
+		{
+			"id": "benefits-title",
+			"name": "Benefits Headline Text",
+			"type": "text"
+		},
+		{
+			"id": "benefits",
+			"name": "Benefit List Text",
+			"type": "text"
+		},
+		{
+			"id": "share-container",
+			"name": "Social Share Container",
+			"type": "container"
+		},
+		{
+		  "id": "share-twitter",
+		  "name": "Twitter",
+		  "type": "dynamic",
+		  "data": {
+		    "variables": ["twitterurl"]
+		  }
+		},
+		{
+		  "id": "share-facebook",
+		  "name": "Facebook",
+		  "type": "dynamic",
+		  "data": {
+		    "variables": ["facebookurl"]
+		  }
+		},
+		{
+		  "id": "share-google",
+		  "name": "Google+",
+		  "type": "dynamic",
+		  "data": {
+		    "variables": ["googleurl"]
+		  }
+		},
+		{
+			"id": "warning-container",
+			"name": "Warning Container",
+			"type": "container"
+		},
+		{
+			"id": "warning-msg",
+			"name": "Message Text",
+			"type": "text"
+		},
+		{
+			"id": "warning-cta",
+			"name": "Call to Action Text",
+			"type": "text"
+		},
+		{
+			"id": "cta",
+			"name": "Call to Action button",
+			"type": "link",
+			"data": {
+				"href": "#/optin"
+			}
+		},
+		{
+		    "id": "facebook-comments",
+		    "name": "Facebook Comments",
+		    "type": "facebook-comments"
+		},
+		{
+			"id": "footer",
+			"name": "Footer",
+			"type": "container"
+		},
+		{
+			"id": "fineprint",
+			"name": "Copyright Text",
+			"type": "text"
+		}
+  ]
+}

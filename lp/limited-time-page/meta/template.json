@@ -1,0 +1,567 @@
+{
+  "id": "4321",
+  "name": "Limited Time Promotion Page",
+  "mobile": true,
+  "notes": "reverted fb comments structure and styles",
+  "syntax": 4,
+  "version": 1.36,
+  "style": {
+    "replacements": [
+      {
+        "type": "color",
+        "name": "Link",
+        "find": "#1fa2ef"
+      },
+      {
+        "type": "color",
+        "name": "Link Hover",
+        "find": "#1fa2ec"
+      },
+      {
+        "type": "color",
+        "name": "Primary Text",
+        "find": "#231f20"
+      },
+      {
+        "type": "color",
+        "name": "CTA Button Background",
+        "find": "#1ec279"
+      },
+      {
+        "type": "color",
+        "name": "CTA Button Text",
+        "find": "#fffff0"
+      },
+      {
+        "type": "color",
+        "name": "Header Background",
+        "find": "#363637"
+      },
+      {
+        "type": "color",
+        "name": "Main Content Background",
+        "find": "#fffffe"
+      },
+      {
+        "type": "color",
+        "name": "Countdown Background",
+        "find": "#1fa2ee"
+      },
+      {
+        "type": "color",
+        "name": "Countdown Number",
+        "find": "#fffffd"
+      },
+      {
+        "type": "color",
+        "name": "FAQ: Question Text",
+        "find": "#1fa2ed"
+      },
+      {
+        "type": "color",
+        "name": "Footer Background",
+        "find": "#363636"
+      },
+      {
+        "type": "color",
+        "name": "Footer Link",
+        "find": "#1fa2eb"
+      },
+      {
+        "type": "color",
+        "name": "Footer Text",
+        "find": "#fffffc"
+      }
+    ]
+	},
+	"variables": {
+		"facebookShareURL": {
+		  "variable": "facebookShareURL",
+		  "dafault": "",
+		  "name": "The URL to share on Facebook. Leave blank to share the current page."
+		},
+		"twitterShareURL": {
+		  "variable": "twitterShareURL",
+		  "dafault": "",
+		  "name": "The URL to share on Twitter. Leave blank to share the current page."
+		},
+		"googleShareURL": {
+		  "variable": "googleShareURL",
+		  "dafault": "",
+		  "name": "The URL to share on Google+. Leave blank to share the current page."
+		},
+		"linkedInShareURL": {
+		  "variable": "linkedInShareURL",
+		  "dafault": "",
+		  "name": "The URL to share on LinkedIn. Leave blank to share the current page."
+		},
+		"facebookURL": {
+		  "variable": "facebookURL",
+		  "dafault": "",
+		  "name": "The URL of your Facebook page."
+		},
+		"twitterURL": {
+		  "variable": "twitterURL",
+		  "dafault": "",
+		  "name": "The URL of your Twitter page."
+		},
+		"googleURL": {
+		  "variable": "googleURL",
+		  "dafault": "",
+		  "name": "The URL of your Google+ page."
+		},
+		"linkedInURL": {
+		  "variable": "linkedInURL",
+		  "dafault": "",
+		  "name": "The URL of your LinkedIn page."
+		}
+	},
+	"elements": [
+		{
+			"id": "header",
+			"name": "Header Section",
+			"type": "container"
+		},
+		{
+			"id": "site-header-logo",
+			"name": "Logo",
+			"type": "image-link",
+			"data": {
+				"max-width": 250
+			}
+		},
+		{
+			"id": "site-header-cta-btn",
+			"name": "CTA Button",
+			"type": "link",
+			"data": {
+				"href": "#/optin"
+			}
+		},
+		{
+			"id": "main-wrap",
+			"name": "Main Content Section",
+			"type": "container"
+		},
+		{
+			"id": "site-title",
+			"name": "H1 Headline Text",
+			"type": "text"
+		},
+		{
+			"id": "countdown",
+			"name": "Countdown",
+			"type": "countdown"
+		},
+		{
+			"id": "days-text",
+			"name": "Days Text",
+			"type": "text"
+		},
+		{
+			"id": "hours-text",
+			"name": "Hours Text",
+			"type": "text"
+		},
+		{
+			"id": "minutes-text",
+			"name": "Minutes Text",
+			"type": "text"
+		},
+		{
+			"id": "seconds-text",
+			"name": "Seconds Text",
+			"type": "text"
+		},
+		{
+			"id": "video-embed",
+			"name": "Video Embed",
+			"type": "video"
+		},
+		{
+			"id": "share-wrap",
+			"name": "Social Share Section",
+			"type": "container"
+		},
+		{
+			"id": "share-wrap-title",
+			"name": "Headline Text",
+			"type": "text"
+		},
+		{
+		  "id": "share-facebook",
+		  "name": "Facebook",
+		  "type": "dynamic",
+		  "data": {
+		    "variables": ["facebookShareURL"]
+		  }
+		},
+		{
+		  "id": "share-twitter",
+		  "name": "Twitter",
+		  "type": "dynamic",
+		  "data": {
+		    "variables": ["twitterShareURL"]
+		  }
+		},
+		{
+		  "id": "share-google",
+		  "name": "Google+",
+		  "type": "dynamic",
+		  "data": {
+		    "variables": ["googleShareURL"]
+		  }
+		},
+		{
+		  "id": "share-linkedin",
+		  "name": "LinkedIn",
+		  "type": "dynamic",
+		  "data": {
+		    "variables": ["linkedInShareURL"]
+		  }
+		},
+		{
+			"id": "cta-box-01",
+			"name": "CTA Container 1",
+			"type": "container"
+		},
+		{
+			"id": "cta-btn-01",
+			"name": "CTA Button",
+			"type": "link",
+			"data": {
+				"href": "#/optin"
+			}
+		},
+		{
+			"id": "cta-btn-01-disclaimer",
+			"name": "Disclaimer Text",
+			"type": "text"
+		},
+		{
+			"id": "faqs",
+			"name": "FAQ Section",
+			"type": "container"
+		},
+		{
+			"id": "faqs-title",
+			"name": "Headline Text",
+			"type": "text"
+		},
+		{
+			"id": "faq-01",
+			"name": "FAQ 01",
+			"type": "container"
+		},
+		{
+			"id": "faq-01-title",
+			"name": "Question Text",
+			"type": "text"
+		},
+		{
+			"id": "faq-01-body",
+			"name": "Answer Text",
+			"type": "text"
+		},
+		{
+			"id": "faq-02",
+			"name": "FAQ 02",
+			"type": "container"
+		},
+		{
+			"id": "faq-02-title",
+			"name": "Question Text",
+			"type": "text"
+		},
+		{
+			"id": "faq-02-body",
+			"name": "Answer Text",
+			"type": "text"
+		},
+		{
+			"id": "faq-03",
+			"name": "FAQ 03",
+			"type": "container"
+		},
+		{
+			"id": "faq-03-title",
+			"name": "Question Text",
+			"type": "text"
+		},
+		{
+			"id": "faq-03-body",
+			"name": "Answer Text",
+			"type": "text"
+		},
+		{
+			"id": "cta-box-02",
+			"name": "CTA Container 2",
+			"type": "container"
+		},
+		{
+			"id": "cta-btn-02",
+			"name": "CTA Button",
+			"type": "link",
+			"data": {
+				"href": "#/optin"
+			}
+		},
+		{
+			"id": "cta-btn-02-disclaimer",
+			"name": "Disclaimer Text",
+			"type": "text"
+		},
+		{
+			"id": "faq-04",
+			"name": "FAQ 04",
+			"type": "container"
+		},
+		{
+			"id": "faq-04-title",
+			"name": "Question Text",
+			"type": "text"
+		},
+		{
+			"id": "faq-04-body",
+			"name": "Answer Text",
+			"type": "text"
+		},
+		{
+			"id": "cta-box-03",
+			"name": "CTA Container 3",
+			"type": "container"
+		},
+		{
+			"id": "cta-btn-03",
+			"name": "CTA Button",
+			"type": "link",
+			"data": {
+				"href": "#/optin"
+			}
+		},
+		{
+			"id": "cta-btn-03-disclaimer",
+			"name": "Disclaimer Text",
+			"type": "text"
+		},
+		{
+			"id": "faq-05",
+			"name": "FAQ 05",
+			"type": "container"
+		},
+		{
+			"id": "faq-05-title",
+			"name": "Question Text",
+			"type": "text"
+		},
+		{
+			"id": "faq-05-body",
+			"name": "Answer Text",
+			"type": "text"
+		},
+		{
+			"id": "faq-06",
+			"name": "FAQ 06",
+			"type": "container"
+		},
+		{
+			"id": "faq-06-title",
+			"name": "Question Text",
+			"type": "text"
+		},
+		{
+			"id": "faq-06-body",
+			"name": "Answer Text",
+			"type": "text"
+		},
+		{
+			"id": "faq-07",
+			"name": "FAQ 07",
+			"type": "container"
+		},
+		{
+			"id": "faq-07-title",
+			"name": "Question Text",
+			"type": "text"
+		},
+		{
+			"id": "faq-07-body",
+			"name": "Answer Text",
+			"type": "text"
+		},
+		{
+			"id": "faq-08",
+			"name": "FAQ 08",
+			"type": "container"
+		},
+		{
+			"id": "faq-08-title",
+			"name": "Question Text",
+			"type": "text"
+		},
+		{
+			"id": "faq-08-body",
+			"name": "Answer Text",
+			"type": "text"
+		},
+		{
+			"id": "cta-box-04",
+			"name": "CTA Container 4",
+			"type": "container"
+		},
+		{
+			"id": "cta-btn-04",
+			"name": "CTA Button",
+			"type": "link",
+			"data": {
+				"href": "#/optin"
+			}
+		},
+		{
+			"id": "cta-btn-04-disclaimer",
+			"name": "Disclaimer Text",
+			"type": "text"
+		},
+		{
+			"id": "faq-09",
+			"name": "FAQ 09",
+			"type": "container"
+		},
+		{
+			"id": "faq-09-title",
+			"name": "Question Text",
+			"type": "text"
+		},
+		{
+			"id": "faq-09-body",
+			"name": "Answer Text",
+			"type": "text"
+		},
+		{
+			"id": "faq-10",
+			"name": "FAQ 10",
+			"type": "container"
+		},
+		{
+			"id": "faq-10-title",
+			"name": "Question Text",
+			"type": "text"
+		},
+		{
+			"id": "faq-10-body",
+			"name": "Answer Text",
+			"type": "text"
+		},
+		{
+			"id": "faq-11",
+			"name": "FAQ 11",
+			"type": "container"
+		},
+		{
+			"id": "faq-11-title",
+			"name": "Question Text",
+			"type": "text"
+		},
+		{
+			"id": "faq-11-body",
+			"name": "Answer Text",
+			"type": "text"
+		},
+		{
+			"id": "faq-12",
+			"name": "FAQ 12",
+			"type": "container"
+		},
+		{
+			"id": "faq-12-title",
+			"name": "Question Text",
+			"type": "text"
+		},
+		{
+			"id": "faq-12-body",
+			"name": "Answer Text",
+			"type": "text"
+		},
+		{
+			"id": "cta-box-05",
+			"name": "CTA Container 5",
+			"type": "container"
+		},
+		{
+			"id": "cta-btn-05",
+			"name": "CTA Button",
+			"type": "link",
+			"data": {
+				"href": "#/optin"
+			}
+		},
+		{
+			"id": "cta-btn-05-disclaimer",
+			"name": "Disclaimer Text",
+			"type": "text"
+		},
+		{
+			"id":"facebook-comments",
+			"name":"Facebook Comments",
+			"type":"facebook-comments"
+		},
+		{
+			"id": "footer-wrap",
+			"name": "Footer Section",
+			"type": "container"
+		},
+		{
+			"id": "site-footer-nav",
+			"name": "Link Navigation",
+			"type": "container"
+		},
+		{
+			"id": "footer-nav-links",
+			"name": "Links Text",
+			"type": "text"
+		},
+		{
+			"id": "fineprint",
+			"name": "Copyright Text",
+			"type": "text"
+		},
+		{
+			"id": "social-links",
+			"name": "Social Links Section",
+			"type": "container"
+		},
+		{
+			"id": "social-link-facebook",
+			"name": "Facebook",
+			"type": "dynamic",
+			"data": {
+			  "variables": ["facebookURL"]
+			}
+		},
+		{
+			"id": "social-link-twitter",
+			"name": "Twitter",
+			"type": "dynamic",
+			"data": {
+			  "variables": ["twitterURL"]
+			}
+		},
+		{
+			"id": "social-link-google-plus",
+			"name": "Google+",
+			"type": "dynamic",
+			"data": {
+			  "variables": ["googleURL"]
+			}
+		},
+		{
+			"id": "social-link-linkedin",
+			"name": "LinkedIn",
+			"type": "dynamic",
+			"data": {
+			  "variables": ["linkedInURL"]
+			}
+		}
+  ],
+	"form": {}
+}

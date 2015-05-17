@@ -1,0 +1,206 @@
+{
+	"id": "4302",
+	"name": "(new) Webinar Replay", 
+	"mobile": true, 
+	"notes": "Prod Upload - fb comments and fade-in box fix", 
+	"syntax": 4, 
+	"version": 1.07,
+	"style": {
+		"html": "",
+		"replacements": [
+			{
+				"type": "color", 
+				"name": "Primary Background", 
+				"find": "#fffffe"
+			},
+			{
+				"type": "color", 
+				"name": "Secondary Background", 
+				"find": "#f3f3f3"
+			},
+			{
+				"type": "color", 
+				"name": "Button Primary Color", 
+				"find": "#ffc600"
+			},
+			{
+				"type": "color", 
+				"name": "Button Secondary Color", 
+				"find": "#f9b51f"
+			}
+		]
+	},
+	"elements": [
+		{
+			"id": "site-header",
+			"name": "Header",
+			"type": "container"
+		},
+		{
+			"id": "site-header-title",
+			"name": "Title",
+			"type": "text"
+		},
+		{
+			"id": "site-header-subtitle",
+			"name": "Subtitle",
+			"type": "text"
+		},
+		{
+			"id": "site-header-counter",
+			"name": "Count Down",
+			"type": "container"
+		},
+		{
+			"id": "site-header-counter-desc",
+			"name": "Description",
+			"type": "text"
+		},
+		{
+			"id": "countdown",
+			"name": "Countdown",
+			"type": "countdown"
+		},
+		{
+			"id": "section-content",
+			"name": "Content",
+			"type": "container"
+		},
+		{
+			"id": "section-content-sharing",
+			"name": "Sharing Buttons",
+			"type": "container"
+		},
+		{
+			"id": "section-content-sharing-facebook",
+			"name": "Facebook",
+			"type": "dynamic",
+			"data": {
+				"variables": ["facebookurl"]
+			}
+		},
+		{
+			"id": "section-content-sharing-twitter",
+			"name": "Twitter",
+			"type": "dynamic",
+			"data": {
+				"variables": ["twitterurl"]
+			}
+		},
+		{
+			"id": "section-content-sharing-google",
+			"name": "Google+",
+			"type": "dynamic",
+			"data": {
+				"variables": ["googleurl"]
+			}
+		},
+		{
+			"id": "section-content-video",
+			"name": "Video",
+			"type": "video"
+		},
+		{
+			"id": "section-content-button",
+			"name": "Button",
+			"type": "link"
+		},
+		{
+			"id": "section-content-features",
+			"name": "Featured",
+			"type": "container"
+		},
+		{
+			"id": "section-content-featured-gaurantee",
+			"name": "Gaurantee",
+			"type": "container"
+		},
+		{
+			"id": "section-content-featured-gaurantee-image",
+			"name": "Image",
+			"type": "image"
+		},
+		{
+			"id": "section-content-featured-gaurantee-line1",
+			"name": "Text 1",
+			"type": "text"
+		},
+		{
+			"id": "section-content-featured-gaurantee-line2",
+			"name": "Text 2",
+			"type": "text"
+		},
+		{
+			"id": "section-content-featured-secure",
+			"name": "Secure",
+			"type": "container"
+		},
+		{
+			"id": "section-content-featured-secure-image",
+			"name": "Image",
+			"type": "image"
+		},
+		{
+			"id": "section-content-featured-secure-line1",
+			"name": "Text",
+			"type": "text"
+		},
+		{
+			"id": "section-content-featured-cards",
+			"name": "Credit Cards",
+			"type": "container"
+		},
+		{
+			"id": "section-content-featured-cards-image",
+			"name": "Image",
+			"type": "image"
+		},
+		{
+        "comment": "Change the URL of Facebook comments inside of dynamic options menu or optionally hide this area completely.",
+        "type": "facebook-comments",
+        "id": "fb-embed-area",
+        "name": "Comments"
+    	},
+    	{
+        	"comment": "Fade-in container.",
+        	"data": {
+            	"delay": 0
+        	},
+        	"type": "container",
+        	"id": "fade-box",
+        	"name": "Fade-In Container"
+    	},
+		{
+			"id": "site-footer",
+			"name": "Footer",
+			"type": "text"
+		}
+	],
+	"variables": {
+		"facebookurl": {
+			"variable": "facebookurl",
+			"dafault": "",
+			"name": "The URL to share on Facebook. Leave blank to share the current page."
+		},
+		"twitterurl": {
+			"variable": "twitterurl",
+			"dafault": "",
+			"name": "The URL to share on Twitter. Leave blank to share the current page."
+		},
+		"googleurl": {
+			"variable": "googleurl",
+			"dafault": "",
+			"name": "The URL to share on Google+. Leave blank to share the current page."
+		},
+		"facebookcomments": {
+            "variable": "facebookcomments",
+            "dafault": "http://leadpages.net",
+            "name": "Facebook Comments URL"
+        },
+		"facebookcommentsposts": {
+            "variable": "facebookcommentsposts",
+            "dafault": "5",
+            "name": "Number of Facebook Comments to Display"
+        }
+	}
+}
