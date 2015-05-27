@@ -1,0 +1,286 @@
+{
+    "id": "4307",
+    "name": "Author Sign Up Page",
+    "mobile": true,
+    "notes": "arrow removed from json",
+    "syntax": 4,
+    "version": 1.94,
+    "style": {
+        "replacements": [
+            {
+                "type": "color",
+                "name": "Primary Light Blue Color",
+                "find": "#1fa2ed"
+            },
+            {
+                "type": "color",
+                "name": "Banner Accent Color",
+                "find": "#25364b"
+            },
+            {
+                "type": "color",
+                "name": "Banner Arrow Color",
+                "find": "#218dcb"
+            },
+            {
+                "type": "color",
+                "name": "sub-textheading Background Color",
+                "find": "#fffeff"
+            },
+            {
+                "type": "color",
+                "name": "Stats Background Color",
+                "find": "#25364c"
+            },
+            {
+                "type": "color",
+                "name": "Testomonial Background Color",
+                "find": "#f0f5f7"
+            },
+            {
+                "type": "color",
+                "name": "How It Works Background Color",
+                "find": "#feffff"
+            },
+            {
+                "type": "color",
+                "name": "Start Today Background Color",
+                "find": "#25364D"
+            },
+            {
+                "type": "color",
+                "name": "Start Today Button Hover Color",
+                "find": "#ffcc01"
+            },
+            {
+                "type": "color",
+                "name": "Brands Background Color",
+                "find": "#fffffe"
+            },
+            {
+                "type": "color",
+                "name": "Footer Background Color",
+                "find": "#25354C"
+            }
+        ]
+    },
+    "variables": {
+        "facebookurl": {
+            "variable": "facebookurl",
+            "dafault": "",
+            "name": "The URL to share on Facebook. Leave blank to share the current page."
+        }
+    },
+    "elements": [
+        {"id": "my-banner", "name": "Banner", "type": "container"},
+        {
+            "id": "my-banner-img",
+            "name": "Banner Background Image",
+            "type": "background-image",
+            "comment": "Choose a background image"
+        },
+        {"id": "my-banner-h1", "name": "Header", "type": "text"},
+        {"id": "my-banner-p", "name": "Header sub-text", "type": "text"},
+        {"id": "sub-heading", "name": "Subheading", "type": "container"},
+        {"id": "sub-heading-primary", "name": "Subheading Primary", "type": "text"},
+        {"id": "sub-heading-secondary", "name": "Subheading Secondary", "type": "text"},
+
+        {"id": "stats", "name": "Stats", "type": "container"},
+        {"id": "stats-01", "name": "Stats Section #1", "type": "container"},
+        {"id": "stats-01-h3", "name": "Stats Section #1 Subheader", "type": "text"},
+        {"id": "stats-01-h2", "name": "Stats Section #1 Header", "type": "text"},
+        {"id": "stats-01-p", "name": "Stats Section #1 Text", "type": "text"},
+        {
+            "id": "stats-img-01",
+            "type": "image",
+            "name": "Math Symbols",
+            "data": {
+                "max-width": 58
+            }
+        },
+        {"id": "stats-02", "name": "Stats Section #2", "type": "container"},
+        {"id": "stats-02-h3", "name": "Stats Section #2 Subheader", "type": "text"},
+        {"id": "stats-02-h2", "name": "Stats Section #2 Header", "type": "text"},
+        {"id": "stats-02-p", "name": "Stats Section #2 Text", "type": "text"},
+        {
+            "id": "stats-img-02",
+            "type": "image",
+            "name": "Math Symbols",
+            "data": {
+                "max-width": 58
+            }
+        },
+        {"id": "stats-03", "name": "Stats Section #3", "type": "container"},
+        {"id": "stats-03-h3", "name": "Stats Section #3 Subheader", "type": "text"},
+        {"id": "stats-03-h2", "name": "Stats Section #3 Header", "type": "text"},
+        {"id": "stats-03-p", "name": "Stats Section #3 Text", "type": "text"},
+        {
+            "id": "stats-img-03",
+            "type": "image",
+            "name": "Math Symbols",
+            "data": {
+                "max-width": 58
+            }
+        },
+        {"id": "stats-04", "name": "Stats Section #4", "type": "container"},
+        {"id": "stats-04-h3", "name": "Stats Section #4 Subheader", "type": "text"},
+        {"id": "stats-04-h2", "name": "Stats Section #4 Header", "type": "text"},
+        {"id": "stats-04-p", "name": "Stats Section #4 Text", "type": "text"},
+        {
+            "id": "stats-img-04",
+            "type": "image",
+            "name": "Math Symbols",
+            "data": {
+                "max-width": 58
+            }
+        },
+
+        {"id": "testimonial", "name": "Testimonial", "type": "container"},
+        {
+            "id": "testimonial-img",
+            "type": "image",
+            "name": "Headshot",
+            "data": {
+                "max-width": 107
+            }
+        },
+        {"id": "testimonial-copy", "name": "Testimonial Content", "type": "text"},
+        {"id": "testimonial-author", "name": "Testimonial Author", "type": "text"},
+        {"id": "testimonial-title", "name": "Testimonial Title", "type": "text"},
+
+        {"id": "how-works", "name": "How It Works", "type": "container"},
+        {"id": "how-works-header", "name": "How It Works Header", "type": "text"},
+        {"id": "step1", "name": "Step 1", "type": "container"},
+        {"id": "num1", "name": "Number 1", "type": "text"},
+        {"id": "how-works-01-header", "name": "Step 1 Header", "type": "container"},
+        {"id": "how-works-01-header", "name": "Step 1 Header Text", "type": "text"},
+        {"id": "how-works-01-copy", "name": "Step 1 Copy", "type": "text"},
+        {
+            "type": "image-link",
+            "id": "how-works-01-image-link",
+            "name": "Step 1 Image Link",
+            "data": {
+                "max-width": 260,
+                "max-height": 280
+            }
+        },
+        {"id": "step2", "name": "Step 2", "type": "container"},
+        {"id": "num2", "name": "Number 2", "type": "text"},
+        {"id": "how-works-02-header", "name": "Step 2 Header", "type": "text"},
+        {
+            "type": "link",
+            "id": "how-works-02-header-link",
+            "name": "Step 2 Link"
+        },
+        {"id": "how-works-02-copy", "name": "Step 2 Copy", "type": "text"},
+        {
+            "id": "how-works-02-img",
+            "type": "image",
+            "name": "Step 2 Image",
+            "data": {
+                "max-width": 350,
+                "max-height": 280
+            }
+        },
+        {"id": "how-works-03-header", "name": "Step 3 Header", "type": "text"},
+        {"id": "step3", "name": "Step 3", "type": "container"},
+        {"id": "num3", "name": "Number 3", "type": "text"},
+        {"id": "how-works-03-copy", "name": "Step 3 Copy", "type": "text"},
+        {
+            "id": "how-works-03-img",
+            "type": "image",
+            "name": "Step 3 Image",
+            "data": {
+                "max-width": 260,
+                "max-height": 280
+            }
+        },
+
+        {"id": "start-today", "name": "Start Today", "type": "container"},
+        {"id": "start-today-header", "name": "Start Today Header", "type": "text"},
+        {
+            "type": "link",
+            "id": "start-today-link",
+            "name": "Start Today Link"
+        },
+
+        {"id": "brands", "name": "Brands", "type": "container"},
+        {"id": "brands-header", "name": "Brands Header", "type": "text"},
+        {"id": "logos", "name": "Logos", "type": "container"},
+        {
+            "id": "brands-img-01",
+            "type": "image",
+            "name": "Brand Image",
+            "data": {
+                "max-width": 180
+            }
+        },
+        {
+            "id": "brands-img-02",
+            "type": "image",
+            "name": "Brand Image",
+            "data": {
+                "max-width": 180
+            }
+        },
+        {
+            "id": "brands-img-03",
+            "type": "image",
+            "name": "Brand Image",
+            "data": {
+                "max-width": 180
+            }
+        },
+        {
+            "id": "brands-img-04",
+            "type": "image",
+            "name": "Brand Image",
+            "data": {
+                "max-width": 180
+            }
+        },
+        {
+            "id": "brands-img-05",
+            "type": "image",
+            "name": "Brand Image",
+            "data": {
+                "max-width": 180
+            }
+        },
+        {
+            "id": "brands-img-06",
+            "type": "image",
+            "name": "Brand Image",
+            "data": {
+                "max-width": 180
+            }
+        },
+        {
+            "id": "brands-img-07",
+            "type": "image",
+            "name": "Brand Image",
+            "data": {
+                "max-width": 180
+            }
+        },
+        {"id": "footer", "name": "Footer", "type": "container"},
+        {"id": "copyright", "name": "Copyright", "type": "text"},
+        {"id": "socials", "name": "Socials", "type": "container"},
+        {
+            "type": "link",
+            "id": "socials-facebook-link",
+            "name": "Facebook Link"
+        },
+        {
+            "type": "link",
+            "id": "socials-twitter-link",
+            "name": "Twitter Link"
+        },
+        {
+            "type": "link",
+            "id": "socials-google-plus-link",
+            "name": "Google Plus Link"
+        },
+        {"id": "bottom-text", "name": "Copyright", "type": "text"}
+    ]
+}

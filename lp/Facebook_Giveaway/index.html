@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+        
+		<meta name="viewport" content="width=device-width">
+
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200italic,200,300,300italic,400italic,600,600italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+		
+		<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+		<script src="js/html5shiv.js" type="text/javascript"></script>
+		<script src="js/functions.js" type="text/javascript"></script>
+		<!--[if gte IE 9]>
+		<style type="text/css">
+			.gradient {
+			   filter: none;
+			}
+		</style>
+	<![endif]-->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+		<div class="header-container">
+			<div class="header wrapper clearfix">
+				<img src="img/logo.png" id="logo" />
+				<p id="headline">Click <strong>'LIKE'</strong> To Keep Up To Date</p>
+			</div> <!-- .header -->
+		</div> <!-- #header-container -->
+		
+		<div class="body-container">
+			<div class="body wrapper clearfix">
+				<img src="img/arrow.png" id="arrow" />
+				<img src="img/gift-monitor.png" id="giftmonitor" />
+				<div class="rightside">
+					<p id="body-headline">CREATE A BUSINESS<br />THAT SUPPORTS<br />YOUR LIFESTYLE</p>
+					<p>Create repeatable online business success with <strong>Wealthification</strong>, James Schramko's bestselling training. Enter your email below for instant access to <span style="color: #2c8ebd"><strong>2 FREE MODULES</strong></span> all about building your business ASSETS and setting up a sustainable structure.</p>
+				</div>
+			</div> <!-- .body -->
+		</div> <!-- #body-container -->
+		<div class="button-holder-container">
+			<div class="button-holder wrapper clearfix">
+				<p>Enter your email below to claim Instant Access to 2 FREE modules from <strong>Wealthification</strong></p>
+				<button class="button1" data-reveal-id="myModal">Yes! I want it!</button>
+			
+			</div> <!-- .button-holder -->
+		</div> <!-- #button-holder-container -->
+		<div class="footer-container">
+			<div class="footer wrapper clearfix">
+				<div class="profile">
+					<img src="img/profile.png" class="profile-pic" />
+					<div class="pro-info">
+						<p class="name">James Schramko</p>
+						<p class="title">Founder of SuperFast Business</p>
+						<p class="website">www.superfastbusiness.com</p>
+					</div>
+					<div class="cl"></div>
+				</div>
+				<img src="img/logo-footer.png" class="logo-footer" />
+			</div> <!-- .footer -->
+		</div> <!-- #footer-container -->
+		
+		<!-- PopUp -->
+	<div class="popup-container reveal-modal" id="myModal">
+		<div class="popup" id="register_popup">
+			<div id="pop-head">
+				<p class="head">Enter your email below to claim Instant Access to <br />2 FREE modules from <strong>Wealthification</strong></p>		
+			</div>
+			<form action="#" method="post">
+				
+				<input type="text" class="inp-text" name="name" id="fname" onfocus="if ($(this).val() == $(this).attr('title')) { $(this).val('') }" onblur="if ($(this).val()=='') { $(this).val($(this).attr('title'));}" value="Enter Your First Name" title="Enter Your First Name" />
+
+				<input type="text" id="email" onfocus="if ($(this).val() == $(this).attr('title')) { $(this).val('') }" onblur="if ($(this).val()=='') { $(this).val($(this).attr('title'));}" title="Enter Your E-Mail Address" value="Enter Your E-Mail Address">
+					
+				<button type="submit" href="#" class="btn" data-lb="editable-text" data-lb-id="submitbutton" data-lb-name="Submit Button">Yes! I want it!</button>
+				
+			</form>
+			<a class="close-reveal-modal"><img src="img/ico-close.png" alt=""/></a>
+		</div>
+	</div>
+	<!-- END PopUp -->
+		
+    </body>
+</html>
