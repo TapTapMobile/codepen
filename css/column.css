@@ -1,0 +1,11 @@
+ul{
+float: left;
+list-style-type: none;
+width: 250px;
+}
+
+ul li {
+ float: left;
+ width: 6em;
+ margin: 11px 0px 0px 15px;
+}
