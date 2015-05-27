@@ -1,0 +1,311 @@
+{
+    "name": "Blog Home Page",
+    "id": "4225",
+    "mobile": true,
+    "notes": "Fixing incorrect image type on an element.",
+    "syntax": 4,
+    "version": 4.09,
+    "style": {
+       "replacements": [
+            {
+                "type":"color",
+                "name": "Header Background",
+                "find": "#fffffc"
+            },
+            {
+                "type": "color", 
+                "name": "Top Content Background", 
+                "find": "#353743"
+            }, 
+            {
+                "type": "color", 
+                "name": "Top Content Text", 
+                "find": "#fffffe"
+            }, 
+            {
+                "type": "color", 
+                "name": "Button Color", 
+                "find": "#e74536"
+            }, 
+            {
+                "type": "color", 
+                "name": "Button Border", 
+                "find": "#b6140f"
+            }, 
+            {
+                "type": "color", 
+                "name": "Button Hover", 
+                "find": "#cc2722"
+            }, 
+            {
+                "type": "color", 
+                "name": "Privacy Text", 
+                "find": "#9698a4"
+            },
+            {
+                "type": "color", 
+                "name": "Testimonials Background", 
+                "find": "#ededed"
+            },
+            {
+            	"type": "color",
+            	"name": "Testimonials Headline",
+            	"find": "#e74535"
+            },
+            {
+            	"type": "color",
+            	"name": "Testimonials Text",
+            	"find": "#747474"
+            },
+            {
+            	"type": "color",
+            	"name": "Testimonials Box",
+            	"find": "#fffffb"
+            },
+            {
+            	"type": "color",
+            	"name": "Footer Background",
+            	"find": "#dbdbdb"
+            },
+            {
+            	"type": "color",
+            	"name": "Footer Link",
+            	"find": "#404040"
+            }
+        ]
+    }, 
+    "elements": [
+    	{
+    		"type": "container",
+    		"id": "header",
+    		"name": "Header"
+    	},
+        {
+        	"data": {
+                "max-width": 240, 
+                "max-height": 100
+            }, 
+            "type": "image", 
+            "id": "logo", 
+            "name": "Logo"
+        }, 
+        {
+        	"type": "container",
+        	"id": "top-content",
+        	"name": "Top Content Section"
+        },
+        {
+            "type": "text", 
+            "id": "headline",
+            "name": "Headline"
+        },
+        {
+        	"type": "link",
+            "data":{
+                "href": "#/optin"
+            },
+        	"id": "optin-submit",
+        	"name": "Optin Text"
+        },
+        {
+            "data": {
+                "max-width": 14, 
+                "max-height": 18
+            }, 
+            "type": "image", 
+            "id": "privacy-img",
+            "name": "Lock",
+            "comment": "Recommended image size is 14x18"
+        },
+        {
+        	"type": "text",
+        	"id": "privacy-text",
+        	"name": "Privacy Text"
+        },
+        {
+        	"type": "text",
+        	"id": "content-text",
+        	"name": "Top Content Text"
+        },
+        {
+        	"data": {
+        		"max-width": 330
+        	},
+        	"type": "image",
+        	"id": "main-image",
+        	"name": "Top Content Image"
+        },
+        {
+        	"type": "container",
+        	"id": "testimonials",
+        	"name": "Testimonials Section"
+        },
+        {
+        	"type": "text",
+        	"id": "testimonials-headline",
+        	"name": "Testimonials Headline"
+        }, 
+        {
+        	"type": "container",
+        	"id": "testimonial1",
+        	"name": "Testimonial 1"
+        },
+        {
+        	"type": "container",
+        	"id": "story1",
+        	"name": "Story 1"
+        },
+        {
+        	"type": "container",
+        	"id": "quotation-mark1",
+        	"name": "Quotation Mark 1"
+        },
+        {
+        	"type": "text",
+        	"id": "quote1",
+        	"name": "Quote 1"
+        },
+        {
+        	"type": "container",
+        	"id": "arrow1",
+        	"name": "Arrow 1"
+        },
+        {
+        	"type": "container",
+        	"id": "author-info1",
+        	"name": "Author Info 1"
+        },
+        {
+        	"type": "container",
+        	"id": "author-label1",
+        	"name": "Author Label 1"
+        },
+        {
+        	"type": "text",
+        	"id": "author1",
+        	"name": "Author1"
+        },
+        {
+        	"data": {
+        		"max-width": 155,
+        		"max-height": 155
+        	},
+        	"type": "image",
+        	"id": "author-image1",
+        	"name": "Author Image 1"
+        },
+        {
+        	"type": "container",
+        	"id": "testimonial2",
+        	"name": "Testimonial 2"
+        },
+        {
+        	"type": "container",
+        	"id": "story2",
+        	"name": "Story 2"
+        },
+        {
+        	"type": "container",
+        	"id": "quotation-mark2",
+        	"name": "Quotation Mark 2"
+        },
+        {
+        	"type": "text",
+        	"id": "quote2",
+        	"name": "Quote 2"
+        },
+        {
+        	"type": "container",
+        	"id": "arrow2",
+        	"name": "Arrow 2"
+        },
+        {
+        	"type": "container",
+        	"id": "author-info2",
+        	"name": "Author Info 2"
+        },
+        {
+        	"type": "container",
+        	"id": "author-label2",
+        	"name": "Author Label 2"
+        },
+        {
+        	"type": "text",
+        	"id": "author2",
+        	"name": "Author2"
+        },
+        {
+        	"data": {
+        		"max-width": 155,
+        		"max-height": 155
+        	},
+        	"type": "image",
+        	"id": "author-image2",
+        	"name": "Author Image 2"
+        },        
+        {
+        	"type": "container",
+        	"id": "testimonial3-id",
+        	"name": "Testimonial 3"
+        },
+        {
+        	"type": "container",
+        	"id": "story3-id",
+        	"name": "Story 3"
+        },
+        {
+        	"type": "container",
+        	"id": "quotation-mark3",
+        	"name": "Quotation Mark 3"
+        },
+        {
+        	"type": "text",
+        	"id": "quote3",
+        	"name": "Quote 3"
+        },
+        {
+        	"type": "container",
+        	"id": "arrow3",
+        	"name": "Arrow 3"
+        },
+        {
+        	"type": "container",
+        	"id": "author-info3",
+        	"name": "Author Info 3"
+        },
+        {
+        	"type": "container",
+        	"id": "author-label3",
+        	"name": "Author Label 3"
+        },
+        {
+        	"type": "text",
+        	"id": "author3",
+        	"name": "Author3"
+        },
+        {
+        	"data": {
+        		"max-width": 155,
+        		"max-height": 155
+        	},
+        	"type": "image",
+        	"id": "author-image3",
+        	"name": "Author Image 3"
+        },
+        {
+        	"type": "link",
+        	"id": "bottom-link",
+        	"name": "Bottom Link"
+        },
+        {
+        	"type": "container",
+        	"id": "footer",
+        	"name": "Footer"
+        },
+        {
+        	"type": "link",
+        	"id": "legal-link",
+        	"name": "Footer Link"
+        }
+    ]
+}
