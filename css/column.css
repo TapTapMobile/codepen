@@ -1,11 +1,32 @@
-ul{
-float: left;
-list-style-type: none;
-width: 250px;
-}
-
-ul li {
- float: left;
- width: 6em;
- margin: 11px 0px 0px 15px;
-}
+.live{ 
+	overflow:hidden;
+ li{ 
+    list-style:none; 
+    position:relative; 
+    padding:0 0 0 2em;
+    margin:0 0 .5em 10px;
+    transition:.12s;
+    
+    &::before{
+      position:absolute;
+      content:'\2022'; 
+      font-family:Arial;
+      color:#FFF;
+      top:0;
+      left:0;
+      text-align:center; 
+      font-size:2em; 
+      opacity:.5;
+      line-height:.75; 
+      transition:.5s;
+    }
+    
+    &:hover{
+      color:#FFF;
+      &::before{
+        transform:scale(2); 
+        opacity:1; 
+        text-shadow:0 0 4px;
+        transition:.1s;
+      }
+    }
