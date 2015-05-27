@@ -1,0 +1,982 @@
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+}
+
+.clearfix:before,
+.site-container:before,
+.site-footer:before,
+.site-header:before,
+.section:before,
+.wrap:before {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after,
+.site-container:after,
+.site-footer:after,
+.site-header:after,
+.section:before,
+.wrap:after {
+	clear: both;
+	content: " ";
+	display: table;	
+}
+
+a:link, a:visited {
+	color: #1bb868;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	color: #4d4c47;
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 26px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 42px;
+}
+
+h2 {
+	font-size: 24px;
+	line-height: 26px;
+	font-weight: 700;
+}
+
+/* Page
+---------------------------------------------------------------------------------------------------- */
+
+.wrap {
+	max-width: 991px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* Header
+---------------------------------------------------------------------------------------------------- */
+#header {
+	background: #fffffe;
+	overflow: auto;
+	padding: 11px 0;
+	vertical-align: center;
+}
+
+#header #logo {
+	float: left;
+	margin-top: 3px;
+	min-height: 40px;
+}
+
+#header #call {
+	float: right;
+	margin-top: -4px;
+	max-width: 70%;
+}
+
+#header #num {
+	color: #1bb868;
+	font-size: 22px;
+	font-weight: 700;
+	margin-left: 16px;
+}
+
+#header #call p {
+	line-height: 26px;
+}
+
+/* Banner Image
+---------------------------------------------------------------------------------------------------- */
+/*#banner-img-container {
+	height: auto;
+	overflow: hidden;
+	width: 100%;
+	z-index: 0;
+}*/
+#banner-img {
+	border-bottom: #f0f0ed solid 1px;
+	border-top: #f0f0ed solid 1px;
+	height: auto;
+	position: relative;
+	vertical-align: bottom;
+	width: 100%;
+}
+
+/* Counter Section
+---------------------------------------------------------------------------------------------------- */
+#counter-section {
+	background: #fffffe;
+	padding: 45px 0 45px;
+}
+
+#counter-section p {
+	color: #595853;
+	margin: 0 auto;
+	margin-top: 25px;
+	max-width: 95%;
+}
+
+#counter-section h2 {
+	margin: 40px 0 10px;
+}
+
+#counter-section #cash {
+	color: #1bb868;
+}
+
+#counter-section #urban {
+	color: #1bb868;
+}
+.counter-head {
+    padding-bottom: 9px
+}
+
+.counter-body ul {
+    list-style: none outside none;
+    margin: 25px 0 45px;
+    padding: 0;
+}
+
+.counter-body li {
+    display: inline-block;
+    width: 84px;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+}
+
+.counter-body .digit {
+    overflow: hidden;
+    height: 77px;
+    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    line-height: 75px;
+    color: #595852;
+    font-weight: bold;
+}
+
+.counter-body .digit {
+    background: #e5e5e5; /* Old browsers */
+	background: -moz-linear-gradient(top, #e5e5e5 0%, #e5e5e5 50%, #f0f0ef 50%, #f0f0ef 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5e5e5), color-stop(50%,#e5e5e5), color-stop(50%,#f0f0ef), color-stop(100%,#f0f0ef)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #e5e5e5 0%,#e5e5e5 50%,#f0f0ef 50%,#f0f0ef 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #e5e5e5 0%,#e5e5e5 50%,#f0f0ef 50%,#f0f0ef 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #e5e5e5 0%,#e5e5e5 50%,#f0f0ef 50%,#f0f0ef 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #e5e5e5 0%,#e5e5e5 50%,#f0f0ef 50%,#f0f0ef 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#f0f0f0',GradientType=0 ); /* IE6-9 */
+
+}
+
+.counter-body .colon {
+	color: #e5e5e5;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 75px;
+	margin-left: 0;
+	vertical-align: top;
+	width: 20px;
+}
+
+.counter .text {
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+#counter-section a#showing-btn {
+	background: #1bb868;
+	color: #fffffc;
+	display: block;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 26px;
+	margin: 0 auto;
+	padding: 21px;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 558px;
+}
+
+#counter-section a#showing-btn:hover {
+	background: #169554;
+}
+
+#counter-section #photo-section {
+	margin: 73px 0 45px;
+}
+
+#counter-section #photo-section img {
+	margin: 0 4px;
+	max-width: 319px;
+}
+
+/* Map Styles
+---------------------------------------------------------------------------------------------------- */
+#map {
+	height: 348px;
+    position: relative;
+    padding-bottom: 15%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+#map iframe { 
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100% !important;
+    height: 150% !important;
+    z-index: -1;
+}
+.gm-style .place-card-large {
+	display: none;
+}
+.overlay {
+    background:transparent; 
+	position:relative; 
+	width: 100%;
+	height: 348px; /* your iframe height */
+    top: 348px;  /* your iframe height */
+    margin-top:-348px;  /* your iframe height */
+    z-index: 1;
+}
+
+/* Middle Section
+---------------------------------------------------------------------------------------------------- */
+#middle-section {
+	background: #f0f0f0;
+	padding: 104px 0 25px;
+}
+
+#middle-section .column {
+	margin: 0 auto;
+	margin-bottom: 80px;
+	max-width: 975px;
+	overflow: hidden;
+}
+
+#middle-section p {
+	margin-top: 0;
+	max-width: 403px;
+	text-align: left;
+}
+
+#middle-section #checks1 {
+	width: 420px;
+}
+
+#middle-section .right {
+	display: inline-block;
+	float: right;
+	vertical-align: top;
+}
+
+#middle-section .left {
+	display: inline-block;
+	float: left;
+	width: 46%;
+	vertical-align: top;
+}
+
+#middle-section .left-opp {
+	display: inline-block;
+	float: left;
+	width: 51%;
+	vertical-align: top;
+}
+
+#middle-section .right-opp {
+	display: inline-block;
+	float: right;
+	padding-left: 60px;
+	width: 48%;
+	vertical-align: top;
+}
+
+#middle-section #photo4 {
+	width: 503px;
+}
+
+#middle-section a#send-btn1, #middle-section a#send-btn2, #middle-section a#send-btn3 {
+	background: #1bb868;
+	color: #fffffc;
+	display: block;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 26px;
+	padding: 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 363px;
+}
+
+#middle-section a#send-btn1:hover, #middle-section a#send-btn2:hover, #middle-section a#send-btn3:hover  {
+	background: #169554;
+}
+
+#middle-section ul {
+	margin-top: 0;
+	margin-bottom: 50px;
+	text-align: left;
+}
+
+#middle-section li {
+	color: #000001;
+	display: block;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 19px;
+	text-align: left;
+}
+
+.fa-check:before {
+    font-family: FontAwesome;
+    font-size: 18px;
+    margin-right: -5px;
+    margin-left: -27px;
+    color: #1bb868;
+    position: relative;
+    top: 0px;
+    left: -15px;
+}
+
+/* Video Section
+---------------------------------------------------------------------------------------------------- */
+#video-section {
+	background: #fffffe;
+	padding: 57px 0 70px;
+}
+
+div#video {
+	margin: auto auto 30px auto;
+	max-width: 90%;
+	height: auto;
+}
+
+div#video iframe {
+	max-width: 100%;
+}
+
+#video-section h1 {
+	margin-top: 35px;
+	margin-bottom: 30px;
+}
+
+#video-section p {
+	color: #595853;
+	margin: 0 auto;
+	max-width: 95%;
+}
+
+#video-section a#send-btn4 {
+	background: #1bb868;
+	color: #fffffc;
+	display: block;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 26px;
+	margin: 0 auto;
+	margin-top: 58px;
+	padding: 21px;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 558px;
+}
+
+#video-section a#send-btn4:hover  {
+	background: #169554;
+}
+
+/* Realtor Section
+---------------------------------------------------------------------------------------------------- */
+#realtor-section {
+	background: #f0f0f0;
+	padding: 44px 0;
+}
+
+#realtor-section .wrap {
+	max-width: 1050px;
+	width: 95%;
+}
+
+#realtor-section #realtor-image {
+	display: inline-block;
+	float: left;
+}
+
+#realtor-section #realtor-info {
+	display: inline-block;
+	float: left;
+	font-size: 16px;
+	line-height: 24px;
+	margin-left: 50px;
+	max-width: 411px;
+	text-align: left;
+	vertical-align: top;
+}
+
+#realtor-section #contact-info {
+	display: inline-block;
+	float: left;
+	margin-left: 50px;
+	text-align: left;
+	vertical-align: top;
+}
+
+#realtor-section a:link, #realtor-section a:visited {
+	color: #1bb868;
+	display: inline;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 30px;
+	text-decoration: none;
+}
+
+#realtor-section a:hover {
+	text-decoration: underline;
+}
+
+#realtor-section #phone-link, #realtor-section #email-link {
+    padding: 3px 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -moz-margin-before: 0;
+    -moz-margin-after: 0;
+    -webkit-margin-start: 0;
+    -moz-margin-start: 0;
+}
+
+#realtor-section #phone-link:before{
+    color: #4d4c47;
+    content: '\f095';
+    display: inline-block;
+    font-family: FontAwesome;
+    margin: 0 12px 0 0;
+}
+#realtor-section #email-link:before  {
+    color: #4d4c47;
+    content: '\f0e0';
+    display: inline-block;
+    font-family: FontAwesome;
+    margin: 0 12px 0 0;
+}
+
+/* Bottom Realtor Section
+---------------------------------------------------------------------------------------------------- */
+#bottom-contact-section {
+	background: #f0f0f0;
+	border-top: solid 1px #fffffe;
+	padding: 50px 0 70px;
+}
+#bottom-contact-section a:hover {
+	text-decoration: underline;
+}
+#bottom-contact-section #realtor2, #bottom-contact-section #realtor3 {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 0 0 20px;
+    width: 48%;
+}
+#bottom-contact-section #realtor2-photo, #bottom-contact-section #realtor3-photo {
+    float: left;
+    margin-right: 27px;
+    max-width: 30%;
+}
+#bottom-contact-section #realtor2 #realtor2-contact, #bottom-contact-section #realtor3 #realtor3-contact {
+    float: left;
+    max-width: 253px;
+}
+#bottom-contact-section #realtor2 h2, #bottom-contact-section #realtor3 h2,
+#bottom-contact-section #realtor2 p, #bottom-contact-section #realtor3 p {
+    text-align: left;
+}
+#bottom-contact-section #realtor2 p, #bottom-contact-section #realtor3 p {
+	font-size: 15px;
+	line-height: 24px;
+}
+
+#bottom-contact-section #realtor2-phone-num, #bottom-contact-section #realtor2-email, 
+#bottom-contact-section #realtor3-phone-num, #bottom-contact-section #realtor3-email {
+    padding: 3px 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -moz-margin-before: 0;
+    -moz-margin-after: 0;
+    -webkit-margin-start: 0;
+    -moz-margin-start: 0;
+}
+
+#bottom-contact-section #realtor2-phone-num:before, #bottom-contact-section #realtor3-phone-num:before {
+    color: #4d4c47;
+    content: '\f095';
+    display: inline-block;
+    font-family: FontAwesome;
+    margin: 0 12px 0 0;
+}
+#bottom-contact-section #realtor2-email:before, #bottom-contact-section #realtor3-email:before {
+    color: #4d4c47;
+    content: '\f0e0';
+    display: inline-block;
+    font-family: FontAwesome;
+    margin: 0 12px 0 0;
+}
+
+/* Logos Section
+---------------------------------------------------------------------------------------------------- */
+#logos-section {
+	background: #fffffe;
+	padding: 15px 0;
+}
+
+#logos a {
+	width: 19%;
+}
+
+#logos img {
+	display: inline-block;
+	max-width: 188px;
+	vertical-align: middle;
+	width: 100%;
+}
+
+/* Footer
+---------------------------------------------------------------------------------------------------- */
+#footer {
+	background: #4d4c46;
+	padding: 5px 0;
+}
+
+#footer p {
+	color: #fffffc;
+	float: left;
+	font-size: 14px;
+	line-height: 26px;
+	margin-top: 15px;
+}
+
+#footer a:hover {
+	text-decoration: underline;
+}
+
+#footer #social-media {
+	float: right;
+	margin-top: 11px;
+	padding: 0;
+}
+
+#footer li {
+	display: inline-block;
+}
+
+#footer .fa {
+	color: #f0f0ee;
+	font-size: 31px;
+	width: 36px;
+}
+
+#footer .fa:hover {
+	color: #fffffd;
+}
+
+
+/* Media Queries
+---------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 1300px) {
+    #bottom-contact-section #realtor2 #realtor2-contact, #bottom-contact-section #realtor3 #realtor3-contact {
+        max-width: 350px;
+    }
+}
+@media only screen and (max-width: 1100px) {
+	#counter-section #photo-section img {
+		width: 30%;
+	}
+}
+@media only screen and (max-width: 975px) {
+	h1 {
+		font-size: 22px;
+		line-height: 28px;
+	}
+
+	h2 {
+		font-size: 18px;
+		line-height: 20px;
+	}
+
+	p {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.wrap {
+		max-width: 90%;
+	}
+
+	#realtor-section .wrap {
+		max-width: 90%;
+	}
+
+	#header #logo {
+		float: none;
+		margin: 0 auto;
+		max-width: 80%;
+	}
+
+	#header #call {
+		display: block;
+		float: none;
+		margin: 0 auto;
+		max-width: 95%;
+	}
+
+	#header #call-text {
+		-webkit-margin-before: 0;
+		-webkit-margin-after: 0;
+		margin: 10px 0;
+	}
+
+	#header #num {
+		background: #f0f0f0;
+		clear: both;
+		display: block;
+		margin: 0 auto;
+		margin-top: 9px;
+		padding: 14px 0;
+		width: 174px;
+	}
+
+	#counter-section {
+		padding: 15px 0;
+	}
+
+	#counter-section p {
+		margin-top: 15px;
+	}
+
+	#counter-section h2 {
+		margin: 30px 0px 0;
+	}
+
+	#middle-section #checks1 {
+		width: auto;
+	}
+
+	#middle-section .right {
+		width: 50%;
+	}
+
+	#middle-section .left {
+		width: 39%;
+	}
+
+	#middle-section a#send-btn2 {
+		width: auto;
+	}
+
+	#middle-section .right-opp {
+		padding-left: 0;
+		width: 45%;
+	}
+
+	#middle-section .left-opp {
+		width: 50%;
+	}
+
+	#middle-section .left-opp img {
+		width: 100%;
+	}
+
+	#middle-section li {
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 10px;
+	}
+
+	#video-section a#send-btn4 {
+		margin-top: 40px;
+	}
+
+	#realtor-section h2 {
+		font-size: 24px;
+	}
+
+	#realtor-section #realtor-image {
+		display: block;
+		float: none;
+		margin: 0 auto;
+		width: auto;
+	}
+	#realtor-section #realtor-info {
+		display: block;
+		float: none;
+		margin: 0 auto;
+		max-width: 95%;
+		text-align: center;
+		width: auto;
+	}
+	#realtor-section #contact-info {
+		display: block;
+		float: none;
+		margin: 0 auto;
+		margin-top: 30px;
+		text-align: center;
+		width: auto;
+	}
+
+	#realtor-section #phone, #realtor-section #email {
+		float: none;
+	}
+
+}
+
+@media only screen and (max-width: 900px) {
+
+	#middle-section {
+		padding: 55px 0 25px;
+	}
+
+	#middle-section p {
+		max-width: 100%;
+	}
+
+	#middle-section .right {
+		float: none;
+		margin: 0 auto;
+		width: 80%;
+	}
+
+	#middle-section .left {
+		float: none;
+		margin: 0 auto;
+		margin-top: 30px;
+		width: 95%;
+	}
+
+	#middle-section .right-opp {
+		float: none;
+		margin: 0 auto;
+		margin-top: 30px;
+		width: 95%;
+	}
+
+	#middle-section .left-opp {
+		float: none;
+		margin: 0 auto;
+		width: 80%;
+	}
+
+	#middle-section a#send-btn1, #middle-section a#send-btn2, #middle-section a#send-btn3 {
+		line-height: 26px;
+		width: 100%;
+	}
+
+	#middle-section ul {
+		margin-bottom: 25px;
+		text-align: center;
+	}
+
+	#middle-section li {
+		text-align: center;
+	}
+
+	#middle-section p {
+		text-align: center;
+	}
+    #bottom-contact-section #realtor2, #bottom-contact-section #realtor3  {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    #bottom-contact-section #realtor2-photo, #bottom-contact-section #realtor3-photo {
+        display: block;
+        float: none;
+        margin: 0 auto;
+        max-width: 163px;
+        padding: 10px 0;
+        width: auto;
+    }
+    #bottom-contact-section #realtor2 #realtor2-contact, #bottom-contact-section #realtor3 #realtor3-contact {
+        float: none;
+        max-width: 100%;
+        padding: 10px 0 20px;
+        width: 100%;
+    }
+    #bottom-contact-section #realtor2 h2, #bottom-contact-section #realtor3 h2,
+    #bottom-contact-section #realtor2 p, #bottom-contact-section #realtor3 p {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+
+	.counter-body li  {
+		height: 60px;
+		width: 50px;
+	}
+
+	.counter-body .digit {
+		font-size: 24px;
+		height: 50px;
+		line-height: 52px;
+	}
+
+	.counter-body .colon {
+		font-size: 24px;
+		line-height: 45px;
+		width: 10px;
+	}
+
+	.counter-body .text {
+		font-size: 12px;
+	}
+
+	.counter-body ul {
+		margin: 20px 0 45px;
+	}
+
+	#counter-section a#showing-btn {
+		font-size: 20px;
+		padding: 16px;
+		width: 100%;
+	}
+
+	#counter-section #photo-section {
+		margin: 55px 0 45px;
+	}
+
+	#counter-section #photo-section img {
+		margin: 14px 0;
+		width: 100%;
+	}
+
+	#middle-section {
+		padding: 55px 0 0;
+	}
+
+	#middle-section p {
+		max-width: 100%;
+		text-align: left;
+	}
+
+	#middle-section .column {
+		margin-bottom: 60px;
+	}
+
+	#middle-section .right {
+		width: 100%;
+	}
+
+	#middle-section .left {
+		float: none;
+		margin: 0 auto;
+		margin-top: 30px;
+		width: 100%;
+	}
+
+	#middle-section .right-opp {
+		margin: 0 auto;
+		margin-top: 30px;
+		width: 100%;
+	}
+
+	#middle-section .left-opp {
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	#middle-section a#send-btn1, #middle-section a#send-btn2, #middle-section a#send-btn3 {
+		line-height: 26px;
+		width: 100%;
+	}
+
+	#middle-section ul {
+		margin-bottom: 25px;
+		text-align: left;
+	}
+
+	#middle-section li {
+		text-align: left;
+	}
+
+	#video-section a#send-btn4 {
+		font-size: 20px;
+		line-height: 26px;
+		width: 100%;
+	}
+
+	div#video iframe {
+		height: auto;
+	}
+
+	#video-section h1 {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	#logos {
+		display: block;
+		margin: 0 auto;
+	}
+
+	#logos a {
+		width: auto;
+	}
+
+	#footer {
+		padding: 20px 0;
+	}
+
+	#footer #footer-text {
+		display: block;
+		float: none;
+		margin: 0 auto;
+		margin-top: 0;
+	}
+
+	#footer ul {
+		float: none;
+		-webkit-padding-start: 0;
+		-webkit-margin-before; 0;
+		text-align: center;
+	}
+
+	#footer #social-media {
+		display: block;
+		float: none;
+		margin: 0 auto;
+	}
+
+}
+@media only screen and (max-width: 400px) {
+	#banner-image {
+		max-height: 120px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

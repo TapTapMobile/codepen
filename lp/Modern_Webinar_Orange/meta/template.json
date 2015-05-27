@@ -1,0 +1,284 @@
+{
+    "id": "4319",
+    "name": "Modern Webinar",
+    "mobile": true,
+    "notes": "MAR-292, added 4/21 image pack",
+    "syntax": 4,
+    "version": 1.13,
+    "style": {
+        "replacements": [
+            {
+                "type": "color",
+                "name": "Header Color",
+                "find": "#EC6D20"
+            },
+            {
+                "type": "color",
+                "name": "Banner Background Color",
+                "find": "#39495A"
+            },
+            {
+                "type": "color",
+                "name": "Banner Text Color",
+                "find": "#fffffe"
+            },
+            {
+                "type": "color",
+                "name": "Date Separator Color",
+                "find": "#989898"
+            },
+            {
+                "type": "color",
+                "name": "Button Color",
+                "find": "#EC6D21"
+            },
+            {
+                "type": "color",
+                "name": "Button Text Color",
+                "find": "#fdfefe"
+            },
+            {
+                "type": "color",
+                "name": "Button Hover Color",
+                "find": "#DA5200"
+            },
+            {
+                "type": "color",
+                "name": "Countdown Background Color",
+                "find": "#656564"
+            },
+            {
+                "type": "color",
+                "name": "Countdown Number Color",
+                "find": "#FAFAFA"
+            },
+            {
+                "type": "color",
+                "name": "Countdown Label Color",
+                "find": "#adadad"
+            },
+            {
+                "type": "color",
+                "name": "Description Background Color",
+                "find": "#fffffc"
+            },
+            {
+                "type": "color",
+                "name": "Description Header Title Color",
+                "find": "#333335"
+            },
+            {
+                "type": "color",
+                "name": "Description Subheader Title Color",
+                "find": "#555557"
+            },
+            {
+                "type": "color",
+                "name": "Description Paragraph Color",
+                "find": "#222224"
+            },
+            {
+                "type": "color",
+                "name": "Testimonial Background Color",
+                "find": "#727B84"
+            },
+            {
+                "type": "color",
+                "name": "Testimonial Text Color",
+                "find": "#fefefd"
+            },
+            {
+                "type": "color",
+                "name": "Call to Action Background Color",
+                "find": "#fefffe"
+            },
+            {
+                "type": "color",
+                "name": "Call to Action Text Color",
+                "find": "#333332"
+            },
+            {
+                "type": "color",
+                "name": "Footer Background Color",
+                "find": "#656565"
+            },
+            {
+                "type": "color",
+                "name": "Footer Text Color",
+                "find": "#fefdfe"
+            },
+            {
+                "type": "color",
+                "name": "Footer Text Hover Color",
+                "find": "#a0a0a0"
+            }
+        ]
+    },
+    "elements": [
+        {"id": "header_wrapper", "name": "Logo Bar", "type": "container"},
+        {"id": "intro_wrapper", "name": "Banner Section", "type": "container"},
+        {"id": "countdown_wrapper", "name": "Countdown Section", "type": "container"},
+        {"id": "description_wrapper", "name": "Description Section", "type": "container"},
+        {"id": "testimonial_wrapper", "name": "Testimonial Section", "type": "container"},
+        {"id": "cta_wrapper", "name": "Call to Action Section", "type": "container"},
+        {"id": "footer_wrapper", "name": "Footer Section", "type": "container"},
+        {"id": "social_media", "name": "Social Media Section", "type": "container"},
+        {"id": "social_facebook", "name": "Facebook Icon", "type": "container"},
+        {"id": "social_twitter", "name": "Twitter Icon", "type": "container"},
+        {"id": "social_google", "name": "Google Plus Icon", "type": "container"},
+        {"id": "social_linkedin", "name": "LinkedIn Icon", "type": "container"},
+
+        {
+            "id": "logo",
+            "name": "Logo",
+            "type": "image",
+            "comment": "Upload your logo.",
+            "data": {
+                "max-width": 245
+            }
+        },
+        {
+            "id": "intro_bg",
+            "name": "Banner Background Image",
+            "type": "image",
+            "comment": "Choose a background photo for your banner.",
+            "data": {
+                "max-width": 1600,
+                "alternate-sources": [
+                    "img/01.jpg",
+                    "img/02.jpg",
+                    "img/03.jpg",
+                    "img/04.jpg",
+                    "img/05.jpg",
+                    "img/06.jpg",
+                    "img/07.jpg",
+                    "img/08.jpg",
+                    "img/09.jpg",
+                    "img/10.jpg"
+                ]
+            }
+        },
+		
+		{
+			"type": "embed",
+			"id": "embed_media",
+			"name": "Embed Video/Media"
+		},
+		
+		
+		{
+			"type": "link",
+			"id": "cta_1_link",
+			"name": "Primary Signup Button",
+			"data": {
+				"href": "#/optin"
+			}
+		},
+		{
+			"type": "link",
+			"id": "cta_2_link",
+			"name": "Secondary Signup Button",
+			"data": {
+				"href": "#/optin"
+			}
+		},
+		{
+			"type": "link",
+			"id": "facebook_link",
+			"name": "Facebook Link"
+		},
+		{
+			"type": "link",
+			"id": "twitter_link",
+			"name": "Twitter Link"
+		},
+		{
+			"type": "link",
+			"id": "google_link",
+			"name": "Google Plus Link"
+		},
+		{
+			"type": "link",
+			"id": "linkedin_link",
+			"name": "LinkedIn Link"
+		},
+		{
+			"type": "link",
+			"id": "footer_link_1",
+			"name": "#1 Footer Link"
+		},
+		{
+			"type": "link",
+			"id": "footer_link_2",
+			"name": "#2 Footer Link"
+		},
+		{
+			"type": "link",
+			"id": "footer_link_3",
+			"name": "#3 Footer Link"
+		},
+		{
+			"type": "link",
+			"id": "footer_link_4",
+			"name": "#4 Footer Link"
+		},
+		
+		
+        {
+            "type": "countdown",
+            "id": "launch_countdown",
+            "name": "Registration Countdown"
+        },
+		
+        {
+            "id": "intro_title", 
+            "name": "Banner First Line", 
+            "type": "text"
+        },
+        {
+            "id": "intro_subtitle", 
+            "name": "Banner Second Line", 
+            "type": "text"
+        },
+        {
+            "id": "horizontalRule",
+            "name": "Horizontal Line",
+            "type": "container"
+        },
+        {
+            "id": "join_us", 
+            "name": "Banner Small Text", 
+            "type": "text"
+        },
+        {
+            "id": "day", 
+            "name": "Webinar Date", 
+            "type": "text"
+        },
+        {
+            "id": "dashes",
+            "name": "Webinar Dashes",
+            "type": "container"
+        },
+        {
+            "id": "time", 
+            "name": "Webinar Time", 
+            "type": "text"
+        },
+        {
+            "id": "description_title", 
+            "name": "Description Header Title", 
+            "type": "text"
+        },
+        {"id": "description_subtitle", "name": "Description Subheader Title", "type": "text"},
+        {"id": "description_text", "name": "Description Text", "type": "text"},
+        {"id": "testimonial_title", "name": "Testimonial Title", "type": "text"},
+        {"id": "testimonial_1_text", "name": "#1 Testimonial Text", "type": "text"},
+        {"id": "testimonial_1_author", "name": "#1 Testimonial Author", "type": "text"},
+        {"id": "testimonial_2_text", "name": "#2 Testimonial Text", "type": "text"},
+        {"id": "testimonial_2_author", "name": "#2 Testimonial Author", "type": "text"},
+        {"id": "countdown_text", "name": "Countdown Title", "type": "text"},
+        {"id": "cta_title", "name": "Call To Action Title", "type": "text"},
+        {"id": "legal_text", "name": "Legal Text", "type": "text"}
+    ]
+}
